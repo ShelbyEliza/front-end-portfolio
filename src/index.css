@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 :root {
   --creamy-peach: "#f8a68b",
   --english-walnut: "#402d27",
@@ -21,11 +16,6 @@
   box-sizing: border-box;
 }
 
-/* .app {
-  font-size: 16px;
-  background: radial-gradient(ellipse at top, #e66465, transparent),
-  radial-gradient(ellipse at bottom, #4d9f0c, transparent);
-} */
 body {
   font-size: 16px;
   background: radial-gradient(ellipse at top, #feebc8, transparent),
@@ -33,8 +23,6 @@ body {
 
   display: flex;
   justify-content: center;
-
-  /* padding: 0rem 2rem; */
 
   width: 100%;
 

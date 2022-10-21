@@ -10,7 +10,6 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    // <div class="m-0 box-border min-h-screen p-0 text-english-walnut">
     <div className="app">
       <BrowserRouter>
         <Header />
