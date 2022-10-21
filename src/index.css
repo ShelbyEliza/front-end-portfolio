@@ -2,11 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* margin: 0;
-  padding: 0;
-  box-sizing: border-box; */
+
+:root {
+  --creamy-peach: "#f8a68b",
+  --english-walnut: "#402d27",
+  --hatoba-pigeon: "#9c88a0ff",
+  --painters-canvas: "#f8f2dfff",
+  --summit: "#8cb2b4ff",
+  --biscuit: "#feebc8",
+  --we-peep: "#fdd8d8",
+  --chewing-gum: "#ebadad",
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .app {
+  font-size: 16px;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+  radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+} */
 body {
+  font-size: 16px;
+  background: radial-gradient(ellipse at top, #feebc8, transparent),
+    radial-gradient(ellipse at bottom, #ebadad, transparent);
+
+  display: flex;
+  justify-content: center;
+
+  /* padding: 0rem 2rem; */
+
+  width: 100%;
+
+  overflow-x: hidden;
+  border: 1rem solid var(--summit);
 }

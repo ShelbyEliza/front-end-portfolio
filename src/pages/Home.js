@@ -1,6 +1,8 @@
+import styles from "../css/Home.module.css";
+
 export default function Home() {
   return (
-    <div>
+    <div className={styles.home}>
       <p>
         He was a rather silent man, though perfectly good-humored. No clumsiness
         of Arren's fretted him; he was companionable; there could be no better

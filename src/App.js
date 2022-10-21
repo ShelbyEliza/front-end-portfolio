@@ -10,7 +10,8 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div class="m-0 box-border min-h-screen bg-summit p-0 text-english-walnut">
+    // <div class="m-0 box-border min-h-screen p-0 text-english-walnut">
+    <div className="app">
       <BrowserRouter>
         <Header />
         <Nav />
@@ -26,6 +27,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+    // </div>
   );
 }
 

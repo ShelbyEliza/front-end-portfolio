@@ -1,18 +1,19 @@
 import { ReactComponent as Logo } from "../assets/logo-1.svg";
 // import River from "../assets/river.jpg";
+import styles from "./Header.module.css";
 
 import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div
-      class="flex justify-center bg-white p-20"
+    <header
+      class="flex justify-center p-20"
       // style={{
       //   backgroundImage: `url(${River})`,
       //   backgroundSize: "100%",
       // }}
     >
-      <Link to="/" class="rounded-full  p-8">
+      <Link to="/">
         <Logo />
       </Link>
       {/* <div
@@ -22,6 +23,6 @@ export default function Header() {
       >
         hello
       </div> */}
-    </div>
+    </header>
   );
 }
