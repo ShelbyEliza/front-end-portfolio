@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 export default function Nav() {
   return (
     <nav>
-      <ul class="flex justify-between">
-        <li class="500 bg-creamy-peach">
+      <ul>
+        <li>
           <NavLink to="/">Home</NavLink>
         </li>
         <li>

@@ -1,6 +1,6 @@
 # Shelby's Front-end Portfolio
 
-**This project was built to showcase Shelby Shipley's (my) front-end development skills**.
+**This project was built to showcase Shelby Shipley's (my) front-end development skills.**
 
 It features previous websites I've built, information about me, ways to get in touch, and some of my personal blogs & digital art for you to gaze upon.
 
