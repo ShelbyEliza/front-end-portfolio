@@ -1,24 +1,27 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import About from "./pages/About";
 import Home from "./pages/Home";
-// import speckleBg from "./assets/speckle-bg.svg";
+import About from "./pages/About";
+import MySites from "./pages/MySites";
+import BlogsAndArt from "./pages/BlogsAndArt";
+import ContactMe from "./pages/ContactMe";
+import Nav from "./components/Nav";
+import DesignGuide from "./pages/design/DesignGuide";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div
-      className="App"
-      // style={{
-      //   backgroundImage: speckleBg,
-      // }}
-    >
+    <div class="m-0 box-border min-h-screen bg-summit p-0 text-english-walnut">
       <BrowserRouter>
-        <header>
-          <h1>My Portfolio</h1>
-        </header>
+        <Header />
+        <Nav />
 
         <Routes>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/" element=<Home />></Route>
+          <Route path="/" element=<Home /> />
+          <Route path="/about" element={<About />} />
+          <Route path="/my-sites" element=<MySites /> />
+          <Route path="/blogs-&-art" element=<BlogsAndArt /> />
+          <Route path="/contact-me" element=<ContactMe /> />
+          <Route path="/design-guide" element=<DesignGuide /> />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
