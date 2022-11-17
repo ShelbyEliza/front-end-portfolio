@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumar+One+Outline&display=swap");
+
 :root {
-  --creamy-peach: "#f8a68b",
-  --english-walnut: "#402d27",
-  --hatoba-pigeon: "#9c88a0ff",
-  --painters-canvas: "#f8f2dfff",
-  --summit: "#8cb2b4ff",
-  --biscuit: "#feebc8",
-  --we-peep: "#fdd8d8",
-  --chewing-gum: "#ebadad",
+  --infinity: #232333ff;
+  --shuriken: #2f2f44ff;
+  --midnight-sky: #434358;
+  --packing-paper: #bca85eff;
+  --white: #ffffffff;
 }
 
+/* 
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Kumar One Outline', cursive;
+  font-family: 'Josefin Slab', serif;
+*/
 
 * {
   margin: 0;
@@ -18,14 +22,28 @@
 
 body {
   font-size: 16px;
-  background: radial-gradient(ellipse at top, #feebc8, transparent),
-    radial-gradient(ellipse at bottom, #ebadad, transparent);
+  color: var(--white);
+  font-family: "Josefin Slab", serif;
+  /* background: radial-gradient(ellipse at top, #ebadad, transparent),
+    radial-gradient(ellipse at bottom, #feebc8, transparent); */
 
+  background: var(--midnight-sky);
   display: flex;
   justify-content: center;
 
   width: 100%;
+  height: 100vh;
 
   overflow-x: hidden;
   border: 1rem solid var(--summit);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--white);
+  font-family: "Josefin Slab", serif;
+}
+a:hover {
+  cursor: pointer;
 }

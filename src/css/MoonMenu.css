@@ -1,0 +1,25 @@
+#innerCircle {
+  /* animation: 3s linear 1s infinite running slidein; */
+
+  /* fill: salmon; */
+}
+.innerCircle {
+  /* animation: 3s linear 1s infinite running slidein; */
+
+  background: salmon;
+}
+
+svg {
+  background: lemonchiffon;
+}
+/* #aboutGroup:hover {
+  cursor: pointer;
+} */
+#aboutBox:hover,
+#sitesBox:hover,
+#blogsAndArtBox:hover {
+  cursor: pointer;
+}
+#textGroup {
+  fill: salmon;
+}

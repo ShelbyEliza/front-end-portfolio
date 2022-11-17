@@ -1,19 +1,19 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+// page components:
 import Home from "./pages/Home";
 import About from "./pages/About";
 import MySites from "./pages/MySites";
 import BlogsAndArt from "./pages/BlogsAndArt";
 import ContactMe from "./pages/ContactMe";
-import Nav from "./components/Nav";
 import DesignGuide from "./pages/design/DesignGuide";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
         <Header />
-        <Nav />
 
         <Routes>
           <Route path="/" element=<Home /> />
@@ -26,7 +26,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-    // </div>
   );
 }
 
