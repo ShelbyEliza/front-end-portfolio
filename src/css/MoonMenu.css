@@ -10,16 +10,24 @@
 }
 
 svg {
-  background: lemonchiffon;
+  border: 1px solid lemonchiffon;
 }
-/* #aboutGroup:hover {
-  cursor: pointer;
-} */
+
 #aboutBox:hover,
 #sitesBox:hover,
 #blogsAndArtBox:hover {
   cursor: pointer;
 }
-#textGroup {
-  fill: salmon;
+/* #animation {
+  animation: 4s linear 1s infinite alternate both running rotate;
+  transform-origin: 0% 0%;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+} */

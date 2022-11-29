@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg version="1.1" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Moon Menu</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Shelby Shipley</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:date>11/17/2022</dc:date>
+    <dc:title>Moon Menu</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-285.67 -68.125)">
+  <circle id="outer-circle" transform="rotate(8.0972)" cx="495.97" cy="180.06" r="180" fill="#bca85e" stop-color="#000000" style="font-variation-settings:'wght' 200;paint-order:stroke markers fill"/>
+  <g id="inner-circle" transform="translate(23.658 -214.66)" fill="#2f2f44">
+   <path transform="matrix(.15683 -.090569 -.090569 -.15683 464.71 523.31)" d="m124.86-78.342h-71.195l-71.195-1e-6 71.195-123.31 35.597 61.656z" stop-color="#000000" stroke-width="9.1494" style="font-variation-settings:'wght' 200;paint-order:stroke markers fill"/>
+   <circle transform="rotate(218.75)" cx="-588.61" cy="-67.413" r="131.23" stop-color="#000000" style="font-variation-settings:'wght' 200;paint-order:stroke markers fill"/>
+  </g>
+  <g transform="translate(24.45 -208.84)">
+   <text dominant-baseline="auto" fill="#ffffff" font-family="'Josefin Sans Thin'" font-size="32px" stop-color="#000000" stroke-width="1.2872" style="-inkscape-stroke:none;font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:'wght' 200;line-height:1;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" xml:space="preserve"><textPath xlink:href="#path4028"><tspan dominant-baseline="auto" fill="#ffffff" font-family="'Josefin Sans Thin'" font-size="32px" stop-color="#000000" stroke-width="1.2872" style="-inkscape-stroke:none;font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:'wght' 200;line-height:1;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal">About</tspan></textPath></text>
+   <path id="path4028" d="m348.58 592.18a165.56 165.56 40.704 0 0 227.57-55.065 165.56 165.56 40.704 0 0-55.065-227.57 165.56 165.56 40.704 0 0-227.57 55.065 165.56 165.56 40.704 0 0 55.065 227.57z" fill="none" stop-color="#000000" stroke="#2f2f44" style="font-variation-settings:'wght' 200;paint-order:stroke markers fill"/>
+  </g>
+  <g transform="translate(24.466 -208.84)">
+   <text dominant-baseline="auto" fill="#ffffff" font-family="'Josefin Sans Thin'" font-size="32px" stop-color="#000000" stroke-width="1.2872" style="-inkscape-stroke:none;font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:'wght' 200;line-height:1;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" xml:space="preserve"><textPath xlink:href="#path4036"><tspan dominant-baseline="auto" fill="#ffffff" font-family="'Josefin Sans Thin'" font-size="32px" stop-color="#000000" stroke-width="1.2872" style="-inkscape-stroke:none;font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:'wght' 200;line-height:1;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal">Blogs &amp; Art</tspan></textPath></text>
+   <path id="path4036" d="m445.3 616.09a165.56 165.56 5.6833 0 0 154.77-175.69 165.56 165.56 5.6833 0 0-175.69-154.77 165.56 165.56 5.6833 0 0-154.77 175.69 165.56 165.56 5.6833 0 0 175.69 154.77z" fill="none" stop-color="#000000" stroke="#2f2f44" style="font-variation-settings:'wght' 200;paint-order:stroke markers fill"/>
+  </g>
+  <g transform="translate(24.438 -208.82)">
+   <path id="path4038" d="m582.55 525.6a165.56 165.56 36.152 0 0-72.955-222.48 165.56 165.56 36.152 0 0-222.48 72.955 165.56 165.56 36.152 0 0 72.955 222.48 165.56 165.56 36.152 0 0 222.48-72.955z" fill="none" stop-color="#000000" stroke="#2f2f44" style="font-variation-settings:'wght' 200;paint-order:stroke markers fill"/>
+   <text fill="#ffffff" font-family="sans-serif" font-size="53.333px" stop-color="#000000" stroke-width="1.2872" style="-inkscape-stroke:none;font-variation-settings:'wght' 200;line-height:1" xml:space="preserve"><textPath xlink:href="#path4038"><tspan fill="#ffffff" font-family="'Josefin Sans Thin'" font-size="32px" stop-color="#000000" stroke-width="1.2872" style="-inkscape-stroke:none;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Sites</tspan></textPath></text>
+  </g>
+ </g>
+</svg>
