@@ -1,33 +1,8 @@
-#innerCircle {
-  /* animation: 3s linear 1s infinite running slidein; */
-
-  /* fill: salmon; */
-}
-.innerCircle {
-  /* animation: 3s linear 1s infinite running slidein; */
-
-  background: salmon;
-}
-
 svg {
-  border: 1px solid lemonchiffon;
+  position: absolute;
+  height: 360px;
+  width: 360px;
 }
-
-#aboutBox:hover,
-#sitesBox:hover,
-#blogsAndArtBox:hover {
-  cursor: pointer;
+#outer-moon {
+  rotate: 25deg;
 }
-/* #animation {
-  animation: 4s linear 1s infinite alternate both running rotate;
-  transform-origin: 0% 0%;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(20deg);
-  }
-} */

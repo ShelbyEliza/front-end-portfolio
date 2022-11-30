@@ -1,32 +1,82 @@
 // css:
 import "../../css/MoonMenu.css";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
-const positionKey = [
-  "aboutToBlogsAndArt",
-  "aboutToSites",
-  "blogsAndArtToAbout",
-  "blogsAndArtToSites",
-  "sitestoAbout",
-  "sitestoBlogsAndArt",
+const defaultObj = {
+  clickBox: "aboutBox.click",
+  xlinkHref: "#sitesToAbout",
+};
+
+const animationPaths = [
+  "#aboutToBlogsAndArt",
+  "#aboutToSites",
+  "#blogsAndArtToAbout",
+  "#blogsAndArtToSites",
+  "#sitestoAbout",
+  "#sitestoBlogsAndArt",
 ];
-const positions = ["About", "Blogs &amp; Art", "Sites"];
+
+const clickBoxes = ["aboutBox.click", "blogsAndArtBox.click", "sitesBox.click"];
+const positions = ["about", "blogsAndArt", "sites"];
 
 export default function Tester() {
-  // const [currentPosition, setCurrentPosition] = useState(positions[0]);
   const [clickedPosition, setClickedPosition] = useState(positions[0]);
-  const currentPosition = useRef(positions[0]).current;
+  const [animation, setAnimation] = useState("");
+  const prevPositionRef = useRef("about");
+  const [aniObject, setAniObject] = useState(defaultObj);
 
-  console.log(currentPosition, clickedPosition);
-  // useEffect(() => {
-  //   setCurrentPosition(clickedPosition);
-  // }, [clickedPosition]);
+  useEffect(() => {
+    console.log("New position has been selected.");
+    const fromPositionRef = prevPositionRef.current;
+    console.log(fromPositionRef);
+
+    switch (clickedPosition) {
+      case "about":
+        if (fromPositionRef === "blogsAndArt") {
+          setAnimation(<mpath xlinkHref="#blogsAndArtToAbout" />);
+        }
+        if (fromPositionRef === "sites") {
+          setAnimation(<mpath xlinkHref="#sitesToAbout" />);
+        } else {
+          setAnimation(<mpath xlinkHref="" />);
+        }
+        break;
+      case "blogsAndArt":
+        if (fromPositionRef === "about") {
+          setAnimation(<mpath xlinkHref="#aboutToBlogsAndArt" />);
+        }
+        if (fromPositionRef === "sites") {
+          setAnimation(<mpath xlinkHref="#sitesToBlogsAndArt" />);
+        } else {
+          setAnimation(<mpath xlinkHref="" />);
+        }
+        break;
+      case "sites":
+        if (fromPositionRef === "about") {
+          setAnimation(<mpath xlinkHref="#aboutToSites" />);
+        }
+        if (fromPositionRef === "blogsAndArt") {
+          setAnimation(<mpath xlinkHref="#blogsAndArtToSites" />);
+        } else {
+          setAnimation(<mpath xlinkHref="" />);
+        }
+        break;
+      default:
+        console.log("No new menu option selected.");
+        setAnimation(<mpath xlinkHref="" />);
+    }
+    prevPositionRef.current = clickedPosition;
+  }, [clickedPosition]);
 
   const logClick = (position) => {
-    console.log(position);
-    setClickedPosition(position);
+    // if new  position is selected:
+    if (position !== clickedPosition) {
+      console.log(position, clickedPosition);
+      setClickedPosition(position);
+    }
   };
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +137,15 @@ export default function Tester() {
           id="sitesToAbout"
           d="m 619.10247,285.40161 c -4.00914,14.74326 -10.14256,29.1744 -18.50238,42.87133 -13.29769,21.78725 -30.82297,39.41367 -50.87711,52.46821 -40.93009,26.64407 -92.3944,34.24354 -139.95044,19.30376"
         />
+        {/**AnimateMotion */}
+        <animateMotion
+          id="testerMotion"
+          dur="2s"
+          repeatCount="1"
+          begin={aniObject.clickBox}
+        >
+          <mpath xlinkHref={aniObject.xlinkHref} />
+        </animateMotion>
       </defs>
       <g transform="translate(-285.67 -68.125)">
         <circle
@@ -104,7 +163,7 @@ export default function Tester() {
         <g transform="translate(24.45 -208.84)">
           <text
             id="aboutBox"
-            onClick={(e) => logClick(e.target.innerHTML)}
+            onClick={(e) => logClick(e.target.id)}
             fill="#fff"
             strokeWidth="1.287"
             fontFamily="'Josefin Sans Thin'"
@@ -137,6 +196,7 @@ export default function Tester() {
           >
             <textPath xlinkHref="#pathAbout">
               <tspan
+                id="about"
                 style={{
                   InkscapeStroke: "none",
                   fontFeatureSettings: "normal",
@@ -171,7 +231,7 @@ export default function Tester() {
         <g transform="translate(24.466 -208.84)">
           <text
             id="blogsAndArtBox"
-            onClick={(e) => logClick(e.target.innerHTML)}
+            onClick={(e) => logClick(e.target.id)}
             fill="#fff"
             strokeWidth="1.287"
             fontFamily="'Josefin Sans Thin'"
@@ -204,6 +264,7 @@ export default function Tester() {
           >
             <textPath xlinkHref="#pathBlogsAndArt">
               <tspan
+                id="blogsAndArt"
                 style={{
                   InkscapeStroke: "none",
                   fontFeatureSettings: "normal",
@@ -238,7 +299,7 @@ export default function Tester() {
         <g transform="translate(24.438 -208.82)">
           <text
             id="sitesBox"
-            onClick={(e) => logClick(e.target.innerHTML)}
+            onClick={(e) => logClick(e.target.id)}
             fill="#fff"
             strokeWidth="1.287"
             fontFamily="sans-serif"
@@ -251,6 +312,7 @@ export default function Tester() {
           >
             <textPath xlinkHref="#pathSites">
               <tspan
+                id="sites"
                 fontFamily="'Josefin Sans Thin'"
                 fontSize="32"
                 style={{
@@ -267,82 +329,23 @@ export default function Tester() {
           </text>
         </g>
         {/** Animations */}
-        <circle r="5" fill="var(--celery-scepter)">
-          <animateMotion
-            id="blogsAndArtClickedAni"
-            dur="2s"
-            repeatCount="1"
-            begin="blogsAndArtBox.click"
-          >
-            {clickedPosition === "About" ? (
-              <mpath xlinkHref="#aboutToBlogsAndArt" />
-            ) : (
-              <mpath xlinkHref="#sitesToBlogsAndArt" />
-            )}
+        <circle r="8" fill="var(--celery-scepter)">
+          <animateMotion dur="2s" repeatCount="1" begin="blogsAndArtBox.click">
+            {animation}
           </animateMotion>
         </circle>
 
-        {/* <circle r="5" fill="var(--celery-scepter)">
-          <animateMotion
-            id="aboutToBlogsAndArtAni"
-            dur="2s"
-            repeatCount="1"
-            begin="blogsAndArtBox.click"
-          >
-            <mpath xlinkHref="#aboutToBlogsAndArt" />
-          </animateMotion>
-        </circle> */}
-        <circle r="5" fill="var(--celery-scepter)">
-          <animateMotion
-            id="aboutToSitesAni"
-            dur="2s"
-            repeatCount="1"
-            begin="sitesBox.click"
-          >
-            <mpath xlinkHref="#aboutToSites" />
-          </animateMotion>
-        </circle>
-        <circle r="5" fill="var(--sweet-perfume)">
-          <animateMotion
-            id="blogsAndArtToAboutAni"
-            dur="2s"
-            repeatCount="1"
-            begin="aboutBox.click"
-          >
-            <mpath xlinkHref="#blogsAndArtToAbout" />
-          </animateMotion>
-        </circle>
-        <circle r="5" fill="var(--infinity)">
-          <animateMotion
-            id="blogsAndArtToSitesAni"
-            dur="2s"
-            repeatCount="1"
-            begin="sitesBox.click"
-          >
-            <mpath xlinkHref="#blogsAndArtToSites" />
+        <circle r="8" fill="var(--sweet-perfume)">
+          <animateMotion dur="2s" repeatCount="1" begin="sitesBox.click">
+            {animation}
           </animateMotion>
         </circle>
 
-        <circle r="5" fill="var(--celery-scepter)">
-          <animateMotion
-            id="sitesToAboutAni"
-            dur="2s"
-            repeatCount="1"
-            begin="aboutBox.click"
-          >
-            <mpath xlinkHref="#sitesToAbout" />
+        <circle r="8" fill="var(--perrywinkle)">
+          <animateMotion dur="2s" repeatCount="1" begin="aboutBox.click">
+            {animation}
           </animateMotion>
         </circle>
-        {/* <circle r="5" fill="var(--perrywinkle)">
-          <animateMotion
-            id="sitesToBlogsAndArtAni"
-            dur="2s"
-            repeatCount="1"
-            begin="blogsAndArtBox.click"
-          >
-            <mpath xlinkHref="#sitesToBlogsAndArt" />
-          </animateMotion>
-        </circle> */}
         <g
           id="inner-circle"
           fill="#2f2f44"

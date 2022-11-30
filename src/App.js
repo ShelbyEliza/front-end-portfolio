@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element=<Home /> />
           <Route path="/about" element={<About />} />
-          <Route path="/my-sites" element=<MySites /> />
-          <Route path="/blogs-&-art" element=<BlogsAndArt /> />
+          <Route path="/sites" element=<MySites /> />
+          <Route path="/blogs-and-art" element=<BlogsAndArt /> />
           <Route path="/contact-me" element=<ContactMe /> />
           <Route path="/design-guide" element=<DesignGuide /> />
           <Route path="*" element={<Navigate to="/" />} />
