@@ -1,7 +1,7 @@
 // css:
 import "../../css/MoonMenu.css";
 
-import { useState, useRef, useEffect } from "react";
+// import { useState, useRef, useEffect } from "react";
 
 const textStyle = {
   InkscapeStroke: "none",
@@ -27,18 +27,18 @@ const textStyle = {
   WebkitTextTransform: "none",
   textTransform: "none",
   whiteSpace: "normal",
-  fill: "#fff",
   fontFamily: "'Josefin Sans Thin'",
   fontSize: "32",
 };
 
-export default function OuterMoon() {
+export default function OuterMoon({ rotationClass }) {
+  console.log(rotationClass);
   const logClick = (position) => {
     console.log(position);
   };
   return (
     <svg
-      id="outer-moon"
+      id={rotationClass}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 360 360"
@@ -113,7 +113,7 @@ export default function OuterMoon() {
 
         <g transform="translate(24.45 -208.84)">
           <text
-            id="aboutBox"
+            id={rotationClass + "-about-box"}
             onClick={(e) => logClick(e.target.id)}
             fontSize="32"
             style={textStyle}
@@ -125,7 +125,7 @@ export default function OuterMoon() {
         </g>
         <g transform="translate(24.466 -208.84)">
           <text
-            id="blogsAndArtBox"
+            id={rotationClass + "-blogs-and-art-box"}
             onClick={(e) => logClick(e.target.id)}
             fontSize="32"
             style={textStyle}
@@ -137,7 +137,7 @@ export default function OuterMoon() {
         </g>
         <g transform="translate(24.438 -208.82)">
           <text
-            id="sitesBox"
+            id={rotationClass + "-sites-box"}
             onClick={(e) => logClick(e.target.id)}
             fontSize="32"
             style={textStyle}

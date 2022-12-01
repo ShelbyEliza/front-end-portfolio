@@ -4,9 +4,6 @@ header {
   width: 100vw;
   height: 360px;
 
-  /* border: 0.1rem solid plum; */
-  /* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='172' height='172' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(45)'%3E%3Crect width='100%25' height='100%25' fill='rgba(235, 173, 173,1)'/%3E%3Ccircle cx='20' cy='20' r='19' fill='rgba(254, 235, 200,1)'/%3E%3Ccircle cx='20' cy='20' r='18' fill='rgba(253, 216, 216,1)' filter='url(%23filter-doodad-2)'/%3E%3Ccircle cx='-20' cy='20' r='18' fill='rgba(253, 216, 216,1)' filter='url(%23filter-doodad-2)'/%3E%3C/pattern%3E%3Cfilter id='filter-doodad-2'%3E%3CfeTurbulence baseFrequency='0.8' numOctaves='2' type='fractalNoise' result='result1'/%3E%3CfeDisplacementMap in2='result1' scale='20' result='result2' xChannelSelector='R' in='SourceGraphic'/%3E%3CfeComposite in2='result2' in='SourceGraphic' operator='atop' result='fbSourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E "); */
-  /* background: var(--infinity); */
   background: radial-gradient(
     circle at center,
     var(--packing-paper) 0,
@@ -16,7 +13,6 @@ header {
   );
 }
 .moon-container {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -30,47 +26,85 @@ header {
   height: 100%;
 }
 
+.about-selected-from-blogs-and-art {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;
+}
+.about-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-sites;
+}
+.blogs-and-art-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-about;
+}
+.blogs-and-art-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-sites;
+}
+.sites-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-about;
+}
+.sites-selected-from-blogs-and-art {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-blogs-and-art;
+}
+
 .btn-container {
   position: absolute;
   width: 360px;
   height: 360px;
 
+  rotate: -2deg;
+
   z-index: 2;
-  /* rotate: 48deg; */
 }
+
+.btn-container a {
+  color: rgba(255, 255, 255, 0);
+}
+
+/* .btn-container a:hover {
+  background: rgba(188, 168, 94, 0.441);
+} */
+
+.home-btn,
 .blogs-and-art-btn,
 .about-btn,
 .sites-btn {
   display: flex;
   position: absolute;
-  border: 1px solid salmon;
+  border: none;
   border-radius: 1rem;
-  padding: 1.2rem;
 
   align-items: center;
   text-align: center;
   background: none;
 
   z-index: 1;
+
+  border: 1px solid salmon;
 }
-.btn-container a {
-  color: rgba(255, 255, 255, 0);
-}
+/* .home-btn {
+  height: 40px;
+  width: 86px;
+
+  top: 298px;
+  right: 194px;
+
+  rotate: 22deg;
+} */
+
 .about-btn {
   height: 40px;
   width: 86px;
 
-  top: 300px;
-  right: 190px;
+  top: 298px;
+  right: 194px;
 
   rotate: 22deg;
 }
 .blogs-and-art-btn {
-  height: 40px;
-  width: 134px;
+  height: 50px;
+  width: 152px;
 
-  top: 280px;
-  right: 44px;
+  top: 278px;
+  right: 40px;
 
   rotate: -30deg;
 }
@@ -78,7 +112,7 @@ header {
   height: 40px;
   width: 74px;
 
-  top: 194px;
+  top: 200px;
   right: 0px;
 
   rotate: -72deg;
@@ -87,6 +121,55 @@ header {
 .blogs-and-art-btn:hover,
 .sites-btn:hover {
   cursor: pointer;
+}
+
+@keyframes rotate-about-from-blogs-and-art {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes rotate-about-from-sites {
+  from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes rotate-blogs-and-art-from-about {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes rotate-blogs-and-art-from-sites {
+  from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes rotate-sites-from-about {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
+}
+@keyframes rotate-sites-from-blogs-and-art {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
 }
 
 /*-------------------- Responsive Design ----------------------*/

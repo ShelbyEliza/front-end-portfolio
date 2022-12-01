@@ -1,6 +1,10 @@
 import styles from "../css/Home.module.css";
 
+import { useParams } from "react-router-dom";
+
 export default function Home() {
+  const { currentPage } = useParams();
+  console.log(currentPage);
   return (
     <div className={styles.home}>
       {/* <div className={`${styles.tester} ${styles.animation}`}></div> */}

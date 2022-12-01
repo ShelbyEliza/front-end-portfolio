@@ -1,6 +1,11 @@
 import "../../css/MoonMenu.css";
 
-export default function InnerMoon() {
+export default function InnerMoon({ rotationClass }) {
+  let pointerID = "inactive-pointer";
+  if (rotationClass !== "") {
+    pointerID = "active-pointer";
+  }
+
   return (
     <svg
       id="inner-moon"
@@ -9,31 +14,17 @@ export default function InnerMoon() {
       viewBox="0 0 360 360"
     >
       <g transform="translate(-285.67 -68.125)">
-        {/* <g
-          id="inner-circle"
-          fill="#2f2f44"
-          paintOrder="stroke markers fill"
-          transform="translate(23.658 -214.66)"
-        >
-          <circle
-            cx="-588.61"
-            cy="-67.413"
-            r="131.23"
-            transform="rotate(218.75)"
-            style={{ fontVariationSettings: "'wght' 200" }}
-          ></circle>
-        </g> */}
         <path
-          id="path3368"
-          fill="#2f2f44"
-          stroke="#2f2f44"
-          strokeOpacity="0"
-          strokeWidth="4.976"
+          id={pointerID}
+          // fill="#2f2f44"
+          // stroke="#b0b0ff"
+          // strokeDasharray="none"
+          strokeOpacity="1"
+          strokeWidth="4.975"
           d="M-240.231 129.088c14.975-8.646 54.805 31.642 69.78 40.288 14.976 8.646 69.781 22.996 69.781 40.288 0 17.292-54.805 31.642-69.78 40.288-14.976 8.646-54.806 48.934-69.781 40.288-14.976-8.646 0-63.284 0-80.576 0-17.292-14.976-71.93 0-80.576z"
           paintOrder="stroke markers fill"
           stopColor="#000"
-          transform="matrix(-.20834 -.15265 .15324 -.20897 352.607 356.085)"
-          // rotate=""
+          transform="matrix(-.25744 .02077 -.02073 -.2583 471.94 377.11)"
         ></path>
         <circle
           id="circle3020"
@@ -44,6 +35,16 @@ export default function InnerMoon() {
           strokeWidth="1"
           display="inline"
           paintOrder="stroke markers fill"
+          stopColor="#000"
+          transform="rotate(145.647)"
+        ></circle>
+        <circle
+          id="circle320"
+          cx="-247.233"
+          cy="-418.929"
+          r="1"
+          fill="var(--packing-paper)"
+          display="inline"
           stopColor="#000"
           transform="rotate(145.647)"
         ></circle>
