@@ -1,0 +1,206 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 360px;
+
+  background: radial-gradient(
+    circle at center,
+    var(--packing-paper) 0,
+    var(--midnight-sky) 32%,
+    var(--shuriken) 60%,
+    var(--infinity) 100%
+  );
+}
+.moon-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-selected-from-blogs-and-art {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;
+}
+.about-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-sites;
+}
+.blogs-and-art-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-about;
+}
+.blogs-and-art-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-sites;
+}
+.sites-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-about;
+}
+.sites-selected-from-blogs-and-art {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-blogs-and-art;
+}
+
+.btn-container {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+
+  rotate: -2deg;
+
+  z-index: 2;
+  border-radius: 100%;
+  /* rotate: 20deg; */
+}
+.btn-container a {
+  color: rgba(255, 255, 255, 0);
+}
+.btn-container a:first-of-type {
+  color: rgb(255, 255, 255);
+}
+
+.btn-container a:hover {
+  background: rgba(188, 168, 94, 0.342);
+}
+
+.home-btn,
+.blogs-and-art-btn,
+.about-btn,
+.sites-btn {
+  display: flex;
+  position: absolute;
+  border: none;
+  border-radius: 1rem;
+
+  align-items: center;
+  text-align: center;
+  background: none;
+
+  z-index: 1;
+
+  border: 1px solid salmon;
+}
+.home-btn {
+  height: 100px;
+  width: 100px;
+  padding: 0.8rem;
+  justify-content: center;
+
+  /* text-align: center; */
+
+  top: 80px;
+  right: 160px;
+
+  border-radius: 100%;
+
+  background: var(--sweet-perfume);
+}
+
+.about-btn {
+  height: 40px;
+  width: 86px;
+
+  top: 302px;
+  right: 190px;
+
+  rotate: 12deg;
+}
+.blogs-and-art-btn {
+  height: 50px;
+  width: 152px;
+
+  top: 278px;
+  right: 34px;
+
+  rotate: -30deg;
+}
+.sites-btn {
+  height: 34px;
+  width: 74px;
+
+  top: 200px;
+  right: -2px;
+
+  rotate: -62deg;
+}
+.about-btn:hover,
+.blogs-and-art-btn:hover,
+.sites-btn:hover {
+  cursor: pointer;
+}
+
+@keyframes rotate-about-from-blogs-and-art {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes rotate-about-from-sites {
+  from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes rotate-blogs-and-art-from-about {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes rotate-blogs-and-art-from-sites {
+  from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes rotate-sites-from-about {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
+}
+@keyframes rotate-sites-from-blogs-and-art {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
+}
+
+/*-------------------- Responsive Design ----------------------*/
+/* ------- desktop ------- */
+@media only screen and (min-width: 900px) {
+  header {
+    height: 360px;
+    font-size: 18px;
+  }
+}
+
+/* ------- tablet -------- */
+@media only screen and (min-width: 401px) and (max-width: 899px) {
+  .site-content {
+    max-width: 899px;
+    min-width: 401px;
+  }
+}
+/* ------- mobile -------- */
+@media only screen and (max-width: 400px) {
+  .site-content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+svg {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  rotate: -2deg;
+}
+#outer-moon {
+  rotate: 20deg;
+}
+
+#about-selected-from-blogs-and-art {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;
+}
+#about-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-sites;
+}
+#blogs-and-art-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-about;
+}
+#blogs-and-art-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-sites;
+}
+#sites-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-about;
+}
+#sites-selected-from-blogs-and-art {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-blogs-and-art;
+}
+
+#about-selected-from-blogs-and-art-about-box,
+#about-selected-from-sites-about-box,
+#blogs-and-art-selected-from-about-blogs-and-art-box,
+#blogs-and-art-selected-from-sites-blogs-and-art-box,
+#sites-selected-from-about-sites-box,
+#sites-selected-from-blogs-and-art-sites-box {
+  fill: rgb(99, 94, 188);
+}
+
+@keyframes rotate-about-from-blogs-and-art {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes rotate-about-from-sites {
+  from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(-54deg);
+  }
+}
+@keyframes rotate-blogs-and-art-from-about {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes rotate-blogs-and-art-from-sites {
+  from {
+    transform: rotate(40deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes rotate-sites-from-about {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
+}
+@keyframes rotate-sites-from-blogs-and-art {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(40deg);
+  }
+}
+
+/* InnerMoon */
+#inactive-pointer {
+  fill: var(--packing-paper);
+}
+#active-pointer {
+  fill: var(--shuriken);
+}
