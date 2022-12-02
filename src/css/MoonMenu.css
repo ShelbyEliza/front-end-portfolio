@@ -4,6 +4,9 @@ svg {
   width: 360px;
   rotate: -2deg;
 }
+#outer-moon {
+  rotate: 20deg;
+}
 
 #about-selected-from-blogs-and-art {
   animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;

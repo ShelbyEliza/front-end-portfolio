@@ -1,43 +1,42 @@
 // css:
 import styles from "../../css/Header.module.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import InnerMoon from "../../assets/menu-images/InnerMoon";
 import OuterMoon from "../../assets/menu-images/OuterMoon";
+import Pointer from "../../assets/menu-images/Pointer";
+import usePathName from "../../hooks/usePathName";
 import { useState } from "react";
 
 export default function Header() {
-  const [rotationClass, setRotationClass] = useState("");
+  let pathName = usePathName();
+  const [rotationClass, setRotationClass] = useState(pathName);
   const [previousClass, setPreviousClass] = useState("blogs-and-art");
-  const location = useLocation();
-  // const reg = /[a-z]/;
-  // const locationID = location.pathname;
-  // const found = locationID.match(reg);
-  // console.log(found);
 
   const selectPage = (page) => {
+    let pageSelected = page + "-selected-from-" + previousClass;
+    console.log(page, previousClass);
     if (page === "home") {
-      console.log(true);
-      setRotationClass("");
+      setRotationClass(pageSelected);
       setPreviousClass("blogs-and-art");
-    } else if (page !== previousClass) {
-      let pageSelected = page + "-selected-from-" + previousClass;
+    } else if (
+      page !== previousClass ||
+      (page === "blogs-and-art" && previousClass === "blogs-and-art")
+    ) {
       setRotationClass(pageSelected);
       setPreviousClass(page);
     }
   };
+
   return (
     <header>
       <div className={styles["circle-container"]}>
         <div className={styles["moon-container"]}>
           <OuterMoon rotationClass={rotationClass} />
           <InnerMoon rotationClass={rotationClass} />
+          {/* <Pointer rotationClass={rotationClass} /> */}
         </div>
-        <nav
-          className={`${styles["btn-container"]} ${styles[rotationClass]} ${
-            styles[location.pathname]
-          }`}
-        >
+        <nav className={`${styles["btn-container"]} ${styles[rotationClass]}`}>
           <NavLink
             id="home"
             to={"/home"}

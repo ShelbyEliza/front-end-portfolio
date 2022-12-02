@@ -16,13 +16,13 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element=<Home /> />
+          <Route path="/home" element=<Home /> />
           <Route path="/about" element={<About />} />
           <Route path="/sites" element=<MySites /> />
           <Route path="/blogs-and-art" element=<BlogsAndArt /> />
           <Route path="/contact-me" element=<ContactMe /> />
           <Route path="/design-guide" element=<DesignGuide /> />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -32,12 +32,13 @@ const textStyle = {
 };
 
 export default function OuterMoon({ rotationClass }) {
-  console.log(rotationClass);
+  console.log(`OuterMoon: ${rotationClass}`);
   const logClick = (position) => {
-    console.log(position);
+    // console.log(position);
   };
   return (
     <svg
+      // id="outer-moon"
       id={rotationClass}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -147,20 +148,6 @@ export default function OuterMoon({ rotationClass }) {
             </textPath>
           </text>
         </g>
-        {/* <g
-          id="inner-circle"
-          fill="#2f2f44"
-          paintOrder="stroke markers fill"
-          transform="translate(23.658 -214.66)"
-        >
-          <circle
-            cx="-588.61"
-            cy="-67.413"
-            r="131.23"
-            transform="rotate(218.75)"
-            style={{ fontVariationSettings: "'wght' 200" }}
-          ></circle>
-        </g> */}
       </g>
     </svg>
   );

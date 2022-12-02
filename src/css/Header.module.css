@@ -53,15 +53,19 @@ header {
   rotate: -2deg;
 
   z-index: 2;
+  border-radius: 100%;
+  /* rotate: 20deg; */
 }
-
 .btn-container a {
   color: rgba(255, 255, 255, 0);
 }
+.btn-container a:first-of-type {
+  color: rgb(255, 255, 255);
+}
 
-/* .btn-container a:hover {
-  background: rgba(188, 168, 94, 0.441);
-} */
+.btn-container a:hover {
+  background: rgba(188, 168, 94, 0.342);
+}
 
 .home-btn,
 .blogs-and-art-btn,
@@ -80,42 +84,48 @@ header {
 
   border: 1px solid salmon;
 }
-/* .home-btn {
-  height: 40px;
-  width: 86px;
+.home-btn {
+  height: 100px;
+  width: 100px;
+  padding: 0.8rem;
+  justify-content: center;
 
-  top: 298px;
-  right: 194px;
+  /* text-align: center; */
 
-  rotate: 22deg;
-} */
+  top: 80px;
+  right: 160px;
+
+  border-radius: 100%;
+
+  background: var(--sweet-perfume);
+}
 
 .about-btn {
   height: 40px;
   width: 86px;
 
-  top: 298px;
-  right: 194px;
+  top: 302px;
+  right: 190px;
 
-  rotate: 22deg;
+  rotate: 12deg;
 }
 .blogs-and-art-btn {
   height: 50px;
   width: 152px;
 
   top: 278px;
-  right: 40px;
+  right: 34px;
 
   rotate: -30deg;
 }
 .sites-btn {
-  height: 40px;
+  height: 34px;
   width: 74px;
 
   top: 200px;
-  right: 0px;
+  right: -2px;
 
-  rotate: -72deg;
+  rotate: -62deg;
 }
 .about-btn:hover,
 .blogs-and-art-btn:hover,
