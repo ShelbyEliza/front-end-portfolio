@@ -54,7 +54,7 @@ header {
 
   z-index: 2;
   border-radius: 100%;
-  /* rotate: 20deg; */
+  rotate: 28deg;
 }
 .btn-container a {
   color: rgba(255, 255, 255, 0);
@@ -82,13 +82,14 @@ header {
 
   z-index: 1;
 
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
 }
 .home-btn {
   height: 100px;
   width: 100px;
   padding: 0.8rem;
   justify-content: center;
+  rotate: -30deg;
 
   /* text-align: center; */
 

@@ -2,15 +2,17 @@ import { useLocation } from "react-router-dom";
 
 export default function usePathName() {
   const regex = /[a-z -]/g;
-  const locationPath = useLocation().pathname;
-  let pathName = locationPath.match(regex).join("");
+  let locationPath = useLocation().pathname;
+
   if (
-    pathName !== "about" &&
-    pathName !== "blogs-and-art" &&
-    pathName !== "sites"
+    locationPath !== "/about" &&
+    locationPath !== "/blogs-and-art" &&
+    locationPath !== "/sites"
   ) {
-    pathName = "home";
+    locationPath = "/home";
   }
+
+  let pathName = locationPath.match(regex).join("");
 
   return pathName;
 }
