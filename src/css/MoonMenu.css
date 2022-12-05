@@ -2,10 +2,13 @@ svg {
   position: absolute;
   height: 360px;
   width: 360px;
-  rotate: -2deg;
+}
+
+.inner-moon {
+  rotate: 30deg;
 }
 #outer-moon {
-  rotate: 20deg;
+  rotate: 28deg;
 }
 
 #about-selected-from-blogs-and-art {
@@ -38,50 +41,50 @@ svg {
 
 @keyframes rotate-about-from-blogs-and-art {
   from {
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(-54deg);
+    transform: rotate(50deg);
   }
 }
 @keyframes rotate-about-from-sites {
   from {
-    transform: rotate(40deg);
+    transform: rotate(-44deg);
   }
   to {
-    transform: rotate(-54deg);
+    transform: rotate(50deg);
   }
 }
 @keyframes rotate-blogs-and-art-from-about {
   from {
-    transform: rotate(-54deg);
+    transform: rotate(50deg);
   }
   to {
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes rotate-blogs-and-art-from-sites {
   from {
-    transform: rotate(40deg);
+    transform: rotate(-44deg);
   }
   to {
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes rotate-sites-from-about {
   from {
-    transform: rotate(-54deg);
+    transform: rotate(50deg);
   }
   to {
-    transform: rotate(40deg);
+    transform: rotate(-44deg);
   }
 }
 @keyframes rotate-sites-from-blogs-and-art {
   from {
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(40deg);
+    transform: rotate(-44deg);
   }
 }
 

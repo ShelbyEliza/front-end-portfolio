@@ -19,8 +19,8 @@ export default function InnerMoon({ rotationClass }) {
 
   return (
     <svg
-      id="inner-moon"
-      // id={rotationClass}
+      class="inner-moon"
+      id={rotationClass}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 360 360"
@@ -28,8 +28,6 @@ export default function InnerMoon({ rotationClass }) {
       <g transform="translate(-285.67 -68.125)">
         <path
           id={pointerID}
-          strokeOpacity="1"
-          strokeWidth="4.975"
           d="M-240.231 129.088c14.975-8.646 54.805 31.642 69.78 40.288 14.976 8.646 69.781 22.996 69.781 40.288 0 17.292-54.805 31.642-69.78 40.288-14.976 8.646-54.806 48.934-69.781 40.288-14.976-8.646 0-63.284 0-80.576 0-17.292-14.976-71.93 0-80.576z"
           paintOrder="stroke markers fill"
           stopColor="#000"
@@ -44,16 +42,6 @@ export default function InnerMoon({ rotationClass }) {
           strokeWidth="1"
           display="inline"
           paintOrder="stroke markers fill"
-          stopColor="#000"
-          transform="rotate(145.647)"
-        ></circle>
-        <circle
-          id="circle320"
-          cx="-247.233"
-          cy="-418.929"
-          r="1"
-          fill="var(--packing-paper)"
-          display="inline"
           stopColor="#000"
           transform="rotate(145.647)"
         ></circle>

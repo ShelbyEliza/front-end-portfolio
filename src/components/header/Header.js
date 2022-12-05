@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 import InnerMoon from "../../assets/menu-images/InnerMoon";
 import OuterMoon from "../../assets/menu-images/OuterMoon";
-import Pointer from "../../assets/menu-images/Pointer";
 import usePathName from "../../hooks/usePathName";
 import { useState } from "react";
 
@@ -15,7 +14,6 @@ export default function Header() {
 
   const selectPage = (page) => {
     let pageSelected = page + "-selected-from-" + previousClass;
-    console.log(page, previousClass);
     if (page === "home") {
       setRotationClass(pageSelected);
       setPreviousClass("blogs-and-art");
@@ -34,9 +32,8 @@ export default function Header() {
         <div className={styles["moon-container"]}>
           <OuterMoon rotationClass={rotationClass} />
           <InnerMoon rotationClass={rotationClass} />
-          {/* <Pointer rotationClass={rotationClass} /> */}
         </div>
-        <nav className={`${styles["btn-container"]} ${styles[rotationClass]}`}>
+        <nav className={`${styles["btn-container"]} `}>
           <NavLink
             id="home"
             to={"/home"}
@@ -71,8 +68,6 @@ export default function Header() {
           </NavLink>
         </nav>
       </div>
-
-      {/* <img src="/assets/logo-1.svg" alt="Shelby Shipley Works Logo" /> */}
     </header>
   );
 }

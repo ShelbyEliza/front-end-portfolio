@@ -32,14 +32,12 @@ const textStyle = {
 };
 
 export default function OuterMoon({ rotationClass }) {
-  console.log(`OuterMoon: ${rotationClass}`);
   const logClick = (position) => {
     // console.log(position);
   };
   return (
     <svg
-      // id="outer-moon"
-      id={rotationClass}
+      id="outer-moon"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 360 360"
