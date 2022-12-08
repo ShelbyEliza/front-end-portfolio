@@ -14,7 +14,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Header />
-
+        {/* <div className="site-content"> */}
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,8 +22,9 @@ function App() {
           <Route path="/blogs-and-art" element={<BlogsAndArt />} />
           <Route path="/contact-me" element={<ContactMe />} />
           <Route path="/design-guide" element={<DesignGuide />} />
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
+        {/* </div> */}
       </BrowserRouter>
     </div>
   );

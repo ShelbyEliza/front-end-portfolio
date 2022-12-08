@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumar+One+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumar+One+Outline&display=swap&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --infinity: #232333ff;
   --shuriken: #2f2f44ff;
   --midnight-sky: #434358;
   --packing-paper: #bca85eff;
+  --eggnog: #feeaa0;
   --white: #ffffffff;
   --perrywinkle: #9898dd;
+  --perrywinkle-trans: #9898dd7a;
   --celery-scepter: #dddd98;
   --sweet-perfume: #dd98ba;
 }
@@ -14,7 +16,9 @@
 /* 
   font-family: 'Cormorant Garamond', serif;
   font-family: 'Kumar One Outline', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-family: 'Josefin Slab', serif;
+  font-family: 'Lora', serif;
 */
 
 * {
@@ -22,24 +26,34 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.app {
+  background: linear-gradient(var(--shuriken), var(--infinity));
+}
 body {
-  font-size: 16px;
-  color: var(--white);
-  fill: var(--white);
-  font-family: "Josefin Slab", serif;
-  /* background: radial-gradient(ellipse at top, #ebadad, transparent),
-    radial-gradient(ellipse at bottom, #feebc8, transparent); */
-
-  background: var(--midnight-sky);
   display: flex;
   justify-content: center;
+  background: var(--infinity);
 
   width: 100%;
   height: 100vh;
 
+  color: var(--white);
+  fill: var(--white);
+  /* background: var(--infinity); */
+  /* background: radial-gradient(
+    circle at center,
+    var(--packing-paper) 0,
+    var(--midnight-sky) 32%,
+    var(--shuriken) 60%,
+    var(--infinity) 100%
+  ); */
+
+  font-family: "Josefin Sans", sans-serif;
+
   overflow-x: hidden;
-  border: 1rem solid var(--summit);
+}
+.site-content {
+  margin: auto;
 }
 
 a:link,
@@ -50,4 +64,57 @@ a:visited {
 }
 a:hover {
   cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+li:before {
+  content: "dark_mode";
+  font-family: "Material Icons";
+  vertical-align: 0%;
+  color: var(--packing-paper);
+  font-size: 0.9rem;
+}
+li {
+  text-indent: 2rem;
+  padding: 0.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--sweet-perfume);
+  /* font-weight: 600; */
+}
+li span {
+  position: relative;
+  left: 0.4rem;
+}
+
+/*-------------------- Responsive Design ----------------------*/
+/* ------- desktop ------- */
+@media only screen and (min-width: 900px) {
+  .app {
+    font-size: 18px;
+  }
+  /* h1 {
+    text-indent: 8%;
+    font-size: 2rem;
+  }
+  h2 {
+    text-indent: 10%;
+    font-size: 1.6rem;
+  } */
+}
+
+/* ------- tablet -------- */
+@media only screen and (min-width: 401px) and (max-width: 899px) {
+  /* .site-content {
+    max-width: 899px;
+    min-width: 401px;
+  } */
+}
+/* ------- mobile -------- */
+@media only screen and (max-width: 400px) {
+  /* .site-content {
+    width: 100%;
+  } */
 }

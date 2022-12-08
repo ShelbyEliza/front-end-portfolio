@@ -2,13 +2,26 @@ header {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 360px;
+  height: 400px;
+  padding: 20px;
+  /* border-bottom: 0.04rem solid rgba(188, 168, 94, 0.575);
+  box-shadow: 0rem 0rem 0.6rem 0.01rem rgba(188, 168, 94, 0.575); */
+
+  /*   background: radial-gradient(
+    circle at center,
+    var(--packing-paper) 0,
+    var(--midnight-sky) 38%,
+    var(--shuriken) 60%,
+    var(--infinity) 100%
+  );
+} */
 
   background: radial-gradient(
     circle at center,
-    var(--packing-paper) 0,
+    var(--eggnog) 0,
+    var(--shuriken) 26%,
     var(--midnight-sky) 32%,
-    var(--shuriken) 60%,
+    var(--shuriken) 46%,
     var(--infinity) 100%
   );
 }
@@ -19,7 +32,7 @@ header {
   height: 100%;
 }
 
-.circle-container {
+.header-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -89,7 +102,7 @@ header {
   width: 100px;
   padding: 0.8rem;
   justify-content: center;
-  rotate: -30deg;
+  rotate: -28deg;
 
   /* text-align: center; */
 
@@ -97,8 +110,9 @@ header {
   right: 160px;
 
   border-radius: 100%;
+  /* border: 2px dotted var(--white); */
 
-  background: var(--sweet-perfume);
+  /* background: var(--sweet-perfume); */
 }
 
 .about-btn {
@@ -187,7 +201,7 @@ header {
 /* ------- desktop ------- */
 @media only screen and (min-width: 900px) {
   header {
-    height: 360px;
+    height: 400px;
     font-size: 18px;
   }
 }

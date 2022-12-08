@@ -11,7 +11,7 @@ const rotationList = [
 ];
 
 export default function InnerMoon({ rotationClass }) {
-  console.log(`InnerMoon: ${rotationClass}`);
+  // console.log(`InnerMoon: ${rotationClass}`);
   let pointerID = "inactive-pointer";
   if (rotationList.includes(rotationClass)) {
     pointerID = "active-pointer";
@@ -19,7 +19,7 @@ export default function InnerMoon({ rotationClass }) {
 
   return (
     <svg
-      class="inner-moon"
+      className="inner-moon"
       id={rotationClass}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

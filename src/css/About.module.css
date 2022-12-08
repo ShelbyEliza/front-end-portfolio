@@ -1,0 +1,92 @@
+.about-container {
+  padding-top: 1rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.title-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+
+  text-align: center;
+}
+
+.page-heading,
+.section-heading {
+  padding-top: 0.4rem;
+
+  background: var(--shuriken);
+  color: var(--sweet-perfume);
+
+  text-shadow: var(--sweet-perfume) 0rem 0 0.8rem;
+  font-family: "Kumar One Outline", cursive;
+
+  border-radius: 2rem;
+  border: 0.08rem solid var(--perrywinkle-trans);
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans);
+  /* box-shadow: 0rem 0rem 0.8rem 0.01rem var(--sweet-perfume); */
+}
+
+.section-heading {
+  text-indent: 1.2rem;
+}
+
+.content {
+  padding: 1rem;
+}
+.about-container p {
+  text-indent: 2rem;
+  margin: 0.6rem 1rem;
+  /* background: var(--shuriken); */
+}
+.about-container h3 {
+  text-align: center;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.6rem 1rem;
+}
+.skill {
+  width: 50%;
+  text-align: center;
+
+  /* background: var(--midnight-sky); */
+  background: var(--perrywinkle-trans);
+
+  border-radius: 2rem;
+  border: 1px solid var(--infinity);
+}
+
+/*-------------------- Responsive Design ----------------------*/
+/* ------- desktop ------- */
+@media only screen and (min-width: 900px) {
+  .about-container {
+    margin: 0rem 6rem;
+  }
+
+  /* .page-heading {
+    text-indent: 12%;
+  }
+  .about-container h2 {
+    text-indent: 16%;
+  } */
+}
+
+/* ------- tablet -------- */
+@media only screen and (min-width: 401px) and (max-width: 899px) {
+  /* .site-content {
+    max-width: 899px;
+    min-width: 401px;
+  } */
+}
+/* ------- mobile -------- */
+@media only screen and (max-width: 400px) {
+  /* .site-content {
+    width: 100%;
+  } */
+}
