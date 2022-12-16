@@ -4,15 +4,16 @@ import { db } from "../firebase/config";
 // firebase imports:
 import { doc, collection, query, where, onSnapshot } from "firebase/firestore";
 
-export const useCollection = (coll, _query, _orderBy) => {
+export const useCollection = (page, _query, _orderBy) => {
   const [documents, setDocuments] = useState(null);
   const [error, setError] = useState(null);
-  // console.log(coll);
+
   // const query = useRef(_query).current;
   // const orderBy = useRef(_orderBy).current;
 
   useEffect(() => {
-    let ref = collection(db, coll);
+    let ref = collection(db, page);
+    // console.log(ref);
 
     // if (query) {
     //   ref = ref.where(...query);
@@ -42,7 +43,7 @@ export const useCollection = (coll, _query, _orderBy) => {
     // unsubscribe on unmount
     return () => unsub();
     // }, [collection, query, orderBy]);
-  }, [coll]);
+  }, [page]);
 
   return { documents, error };
 };

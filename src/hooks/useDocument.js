@@ -3,16 +3,23 @@ import { db } from "../firebase/config";
 
 import { collection, doc, onSnapshot } from "firebase/firestore";
 
-export const useDocument = (coll, id) => {
+export const useDocument = (page, pageID, subDoc) => {
   const [document, setDocument] = useState(null);
   const [error, setError] = useState(null);
+  // console.log(coll);
 
   // realtime data for document:
   useEffect(() => {
-    let selectedDoc = doc(db, coll, id);
+    let pageDoc = doc(db, "blogs", "allBlogs");
+    // let pageDoc = doc(db, page, pageID);
+    // let collRef = collection(pageDoc, pageID);
+    // let refID = ref[0].id;
+    console.log(pageDoc);
+    // console.log(collRef);
+    // let selectedDoc = doc(db, coll, ref.id);
 
     const unsub = onSnapshot(
-      selectedDoc,
+      pageDoc,
       (snapshot) => {
         if (snapshot.data()) {
           setDocument({ ...snapshot.data(), id: snapshot.id });
@@ -28,7 +35,7 @@ export const useDocument = (coll, id) => {
     );
 
     return () => unsub();
-  }, [coll, id]);
+  }, [page, pageID]);
 
   return { document, error };
 };

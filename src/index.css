@@ -5,12 +5,16 @@
   --shuriken: #2f2f44ff;
   --midnight-sky: #434358;
   --packing-paper: #bca85eff;
+  --perrywinkle--super-trans: #9898dd1b;
   --eggnog: #feeaa0;
   --white: #ffffffff;
   --perrywinkle: #9898dd;
   --perrywinkle-trans: #9898dd7a;
   --celery-scepter: #dddd98;
   --sweet-perfume: #dd98ba;
+  --sweet-perfume-trans: #dd98bb82;
+  --mangala-pink: #eb8aa0;
+  --happy-hearts: #d76461;
 }
 
 /* 
@@ -60,23 +64,33 @@ a:link,
 a:visited {
   text-decoration: none;
   color: var(--white);
-  font-family: "Josefin Slab", serif;
+  /* font-family: "Josefin Slab", serif; */
 }
 a:hover {
   cursor: pointer;
 }
+h1,
+h2 {
+  padding: 1rem 2rem;
+
+  background: var(--shuriken);
+  color: var(--mangala-pink);
+
+  text-shadow: var(--sweet-perfume) 0rem 0 0.8rem;
+  font-family: "Kumar One Outline", cursive;
+}
 ul {
   list-style: none;
 }
-li:before {
+/* li:before {
   content: "dark_mode";
   font-family: "Material Icons";
   vertical-align: 0%;
   color: var(--packing-paper);
   font-size: 0.9rem;
-}
+} */
 li {
-  text-indent: 2rem;
+  /* text-indent: 2rem; */
   padding: 0.4rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -84,10 +98,11 @@ li {
   color: var(--sweet-perfume);
   /* font-weight: 600; */
 }
-li span {
+
+/* li span {
   position: relative;
   left: 0.4rem;
-}
+} */
 
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
@@ -95,6 +110,10 @@ li span {
   .app {
     font-size: 18px;
   }
+  .site-content {
+    width: 900px;
+  }
+
   /* h1 {
     text-indent: 8%;
     font-size: 2rem;
