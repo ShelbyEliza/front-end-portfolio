@@ -1,5 +1,6 @@
 // css:
 import styles from "../../css/Header.module.css";
+import burst from "../../assets/burst-opt.svg";
 import { NavLink } from "react-router-dom";
 
 import InnerMoon from "../../assets/menu-images/InnerMoon";
@@ -27,12 +28,12 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <div className={styles["circle-container"]}>
-        <div className={styles["moon-container"]}>
+    <header className={styles.header}>
+      <div className={styles["header-container"]}>
+        <section className={styles["moon-container"]}>
           <OuterMoon rotationClass={rotationClass} />
           <InnerMoon rotationClass={rotationClass} />
-        </div>
+        </section>
         <nav className={`${styles["btn-container"]} `}>
           <NavLink
             id="home"
@@ -40,7 +41,10 @@ export default function Header() {
             className={styles["home-btn"]}
             onClick={(e) => selectPage(e.target.id)}
           >
-            Home
+            <figure>
+              <img src={burst} alt="stylized cat avatar" />
+              <figcaption></figcaption>
+            </figure>
           </NavLink>
           <NavLink
             id="about"

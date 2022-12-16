@@ -1,0 +1,125 @@
+.about-container {
+  display: flex;
+  /* padding-top: 1rem; */
+}
+.about-container h2 {
+  background: var(--shuriken);
+}
+.about-container h3 {
+  text-align: center;
+}
+
+/* .about-container h2,
+.page-heading {
+  padding-top: 0.4rem;
+
+  color: var(--sweet-perfume);
+
+  text-shadow: var(--sweet-perfume) 0rem 0 0.8rem;
+  font-family: "Kumar One Outline", cursive;
+} */
+
+.left {
+  display: flex;
+  width: 25%;
+
+  flex-direction: column;
+  justify-content: space-around;
+  border: 0.08rem solid var(--perrywinkle-trans);
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
+  text-align: center;
+}
+.page-heading {
+  border-top-left-radius: 2rem;
+}
+
+.photo-section {
+  padding: 2rem;
+}
+
+.edu-passion-section {
+  border: 0.08rem solid var(--perrywinkle-trans);
+  /* width: 80%; */
+
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans);
+}
+.edu-passion-section p {
+  text-indent: 2rem;
+  margin: 0.6rem 1.6rem;
+}
+.edu-passion-section h2 {
+  text-indent: 1.2rem;
+}
+.edu-section h2 {
+  border-top-right-radius: 2rem;
+}
+
+.content {
+  padding: 1rem;
+}
+.skills-section {
+  height: 100%;
+  /* background: var(--shuriken); */
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+.skill {
+  width: 100%;
+  padding: 1rem;
+
+  background: var(--perrywinkle-trans);
+
+  border-radius: 1rem;
+  margin: 0.2rem;
+  /* border: 0.4rem solid var(--infinity); */
+  color: var(--sweet-perfume);
+}
+
+/*-------------------- Responsive Design ----------------------*/
+/* ------- desktop ------- */
+@media only screen and (min-width: 900px) {
+  .about-container {
+    /* margin: 0rem 6rem; */
+  }
+  .edu-passion-section {
+    /* width: 80%; */
+  }
+
+  /* .page-heading {
+    text-indent: 12%;
+  }
+  .about-container h2 {
+    text-indent: 16%;
+  } */
+}
+
+/* ------- tablet -------- */
+@media only screen and (min-width: 401px) and (max-width: 899px) {
+  .edu-passion-section {
+    width: 400px;
+  }
+  /* .site-content {
+    max-width: 899px;
+    min-width: 401px;
+  } */
+}
+/* ------- mobile -------- */
+@media only screen and (max-width: 400px) {
+  .edu-passion-section {
+    /* width: 200px; */
+  }
+  /* .site-content {
+    width: 100%;
+  } */
+}
