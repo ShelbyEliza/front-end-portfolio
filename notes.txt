@@ -222,3 +222,6 @@ export default function About() {
     </div>
   );
 }
+
+
+/static/media/underTheShelf.52f8f590cd3928190fd8.png
