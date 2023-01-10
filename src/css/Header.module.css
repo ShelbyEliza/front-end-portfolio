@@ -4,17 +4,6 @@ header {
   width: 100vw;
   height: 400px;
   padding: 20px;
-  /* border-bottom: 0.04rem solid rgba(188, 168, 94, 0.575);
-  box-shadow: 0rem 0rem 0.6rem 0.01rem rgba(188, 168, 94, 0.575); */
-
-  /*   background: radial-gradient(
-    circle at center,
-    var(--packing-paper) 0,
-    var(--midnight-sky) 38%,
-    var(--shuriken) 60%,
-    var(--infinity) 100%
-  );
-} */
 
   background: radial-gradient(
     circle at center,

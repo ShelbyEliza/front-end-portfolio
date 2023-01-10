@@ -7,7 +7,7 @@ import MySites from "./pages/MySites";
 import BlogsAndArt from "./pages/BlogsAndArt";
 import ContactMe from "./pages/ContactMe";
 import DesignGuide from "./pages/design/DesignGuide";
-import Header from "./components/header/Header";
+import Header from "./components/Header";
 
 function App() {
   return (

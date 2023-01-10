@@ -9,6 +9,7 @@ svg {
 }
 #outer-moon {
   rotate: 28deg;
+  /* rotate: -20deg; */
 }
 
 #about-selected-from-blogs-and-art {
@@ -94,4 +95,13 @@ svg {
 }
 #active-pointer {
   fill: var(--shuriken);
+}
+
+/* MoonFace */
+.moon-lady {
+  /* position: relative; */
+  /* top: 10px; */
+
+  border: 1px solid var(--sweet-perfume);
+  /* rotate: 22deg; */
 }

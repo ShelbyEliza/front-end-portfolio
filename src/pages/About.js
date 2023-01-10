@@ -1,6 +1,7 @@
 // css:
 import styles from "../css/About.module.css";
 // import avatar from "../assets/creepy-cat-opt.svg";
+import MoonLady from "../assets/menu-images/MoonLady";
 import burst from "../assets/burst-opt.svg";
 
 import { useCollection } from "../hooks/useCollection";
@@ -41,13 +42,15 @@ export default function About() {
               <section className={styles["title-section"]}>
                 <h1 className={styles["page-heading"]}>Shelby Shipley</h1>
               </section>
-
+              {/* <section>
+                <MoonLady />
+              </section> */}
               <figure className={styles["photo-section"]}>
-                <img
+                {/* <img
                   className={styles.photo}
                   src={burst}
                   alt="where the site's author's professional pic will go"
-                />
+                /> */}
                 <figcaption>Photo</figcaption>
               </figure>
               <section className={styles["skills-section"]}>

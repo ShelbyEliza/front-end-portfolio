@@ -1,12 +1,15 @@
 // css:
-import styles from "../../css/Header.module.css";
-import burst from "../../assets/burst-opt.svg";
+import styles from "../css/Header.module.css";
+import burst from "../assets/burst-opt.svg";
+import MoonFace from "../assets/menu-images/MoonFace";
+import MoonLady from "../assets/menu-images/MoonLady";
 import { NavLink } from "react-router-dom";
 
-import InnerMoon from "../../assets/menu-images/InnerMoon";
-import OuterMoon from "../../assets/menu-images/OuterMoon";
-import usePathName from "../../hooks/usePathName";
+import InnerMoon from "../assets/menu-images/InnerMoon";
+import OuterMoon from "../assets/menu-images/OuterMoon";
+import usePathName from "../hooks/usePathName";
 import { useState } from "react";
+import RotatingRing from "../assets/menu-images/RotatingRing";
 
 export default function Header() {
   let pathName = usePathName();
@@ -33,6 +36,8 @@ export default function Header() {
         <section className={styles["moon-container"]}>
           <OuterMoon rotationClass={rotationClass} />
           <InnerMoon rotationClass={rotationClass} />
+          {/* <RotatingRing rotationClass={rotationClass} /> */}
+          {/* <MoonLady rotationClass={rotationClass} /> */}
         </section>
         <nav className={`${styles["btn-container"]} `}>
           <NavLink
@@ -41,10 +46,11 @@ export default function Header() {
             className={styles["home-btn"]}
             onClick={(e) => selectPage(e.target.id)}
           >
-            <figure>
+            {/* <MoonFace /> */}
+            {/* <figure>
               <img src={burst} alt="stylized cat avatar" />
               <figcaption></figcaption>
-            </figure>
+            </figure> */}
           </NavLink>
           <NavLink
             id="about"
