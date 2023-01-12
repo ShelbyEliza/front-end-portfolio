@@ -37,7 +37,9 @@ export default function OuterMoon({ rotationClass }) {
   };
   return (
     <svg
-      id="outer-moon"
+      // id="outer-moon"
+      id={rotationClass}
+      className="outer-moon"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 360 360"

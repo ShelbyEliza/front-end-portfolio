@@ -62,7 +62,7 @@ function MoonFace(rotationClass) {
         style={{ fontVariationSettings: "'wght' 200" }}
         paintOrder="stroke markers fill"
       ></path> */}
-      {/* <circle
+      <circle
         className="dark-bg"
         cx="-247.23"
         cy="-418.93"
@@ -71,7 +71,7 @@ function MoonFace(rotationClass) {
         transform="rotate(145.647 -118.832 -65.965) scale(.92849)"
         style={{ fontVariationSettings: "'wght' 200" }}
         paintOrder="stroke markers fill"
-      ></circle> */}
+      ></circle>
       <g stroke="#31241c">
         <path
           fill="#3d2d23"

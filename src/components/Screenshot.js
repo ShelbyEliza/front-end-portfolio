@@ -6,9 +6,11 @@ import larderToTable from "../assets/sites-screenshots/larder-to-table.png";
 import underTheShelf from "../assets/sites-screenshots/under-the-shelf.png";
 // eslint-disable-next-line
 import piddleTogether from "../assets/sites-screenshots/piddle-together.png";
+// eslint-disable-next-line
+import financeTracker from "../assets/sites-screenshots/finance-tracker.png";
 
 export default function Screenshot(site) {
-  // console.log(piddleTogether);
+  // console.log(financeTracker);
   return (
     <div className={styles["shot-container"]}>
       <img

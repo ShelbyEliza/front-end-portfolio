@@ -4,14 +4,6 @@ svg {
   width: 360px;
 }
 
-.inner-moon {
-  rotate: 30deg;
-}
-#outer-moon {
-  rotate: 28deg;
-  /* rotate: -20deg; */
-}
-
 #about-selected-from-blogs-and-art {
   animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;
 }
@@ -42,66 +34,61 @@ svg {
 
 @keyframes rotate-about-from-blogs-and-art {
   from {
+    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(50deg);
+    transform-origin: 50% 50%;
+    transform: rotate(-52deg);
   }
 }
 @keyframes rotate-about-from-sites {
   from {
-    transform: rotate(-44deg);
+    transform-origin: 50% 50%;
+    transform: rotate(42deg);
   }
   to {
-    transform: rotate(50deg);
+    transform-origin: 50% 50%;
+    transform: rotate(-52deg);
   }
 }
 @keyframes rotate-blogs-and-art-from-about {
   from {
-    transform: rotate(50deg);
+    transform-origin: 50% 50%;
+    transform: rotate(-52deg);
   }
   to {
+    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
 }
 @keyframes rotate-blogs-and-art-from-sites {
   from {
-    transform: rotate(-44deg);
+    transform-origin: 50% 50%;
+    transform: rotate(42deg);
   }
   to {
+    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
 }
 @keyframes rotate-sites-from-about {
   from {
-    transform: rotate(50deg);
+    transform-origin: 50% 50%;
+    transform: rotate(-52deg);
   }
   to {
-    transform: rotate(-44deg);
+    transform-origin: 50% 50%;
+    transform: rotate(42deg);
   }
 }
 @keyframes rotate-sites-from-blogs-and-art {
   from {
+    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(-44deg);
+    transform-origin: 50% 50%;
+    transform: rotate(42deg);
   }
-}
-
-/* InnerMoon */
-#inactive-pointer {
-  fill: var(--packing-paper);
-}
-#active-pointer {
-  fill: var(--shuriken);
-}
-
-/* MoonFace */
-.moon-lady {
-  /* position: relative; */
-  /* top: 10px; */
-
-  border: 1px solid var(--sweet-perfume);
-  /* rotate: 22deg; */
 }

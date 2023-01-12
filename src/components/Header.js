@@ -1,15 +1,15 @@
 // css:
 import styles from "../css/Header.module.css";
-import burst from "../assets/burst-opt.svg";
-import MoonFace from "../assets/menu-images/MoonFace";
-import MoonLady from "../assets/menu-images/MoonLady";
-import { NavLink } from "react-router-dom";
+import "../css/MoonMenu.css";
 
-import InnerMoon from "../assets/menu-images/InnerMoon";
+// assets:
 import OuterMoon from "../assets/menu-images/OuterMoon";
+import MoonFace from "../assets/menu-images/MoonFace";
+import RotationRing from "../assets/menu-images/RotationRing-opt";
+
 import usePathName from "../hooks/usePathName";
 import { useState } from "react";
-import RotatingRing from "../assets/menu-images/RotatingRing";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   let pathName = usePathName();
@@ -35,48 +35,47 @@ export default function Header() {
       <div className={styles["header-container"]}>
         <section className={styles["moon-container"]}>
           <OuterMoon rotationClass={rotationClass} />
-          <InnerMoon rotationClass={rotationClass} />
-          {/* <RotatingRing rotationClass={rotationClass} /> */}
-          {/* <MoonLady rotationClass={rotationClass} /> */}
+          <MoonFace rotationClass={rotationClass} />
+          <RotationRing rotationClass={rotationClass} />
         </section>
-        <nav className={`${styles["btn-container"]} `}>
-          <NavLink
-            id="home"
-            to={"/home"}
-            className={styles["home-btn"]}
-            onClick={(e) => selectPage(e.target.id)}
-          >
-            {/* <MoonFace /> */}
-            {/* <figure>
-              <img src={burst} alt="stylized cat avatar" />
-              <figcaption></figcaption>
-            </figure> */}
-          </NavLink>
-          <NavLink
-            id="about"
-            to={"/about"}
-            className={styles["about-btn"]}
-            onClick={(e) => selectPage(e.target.id)}
-          >
-            About
-          </NavLink>
-          <NavLink
-            id="blogs-and-art"
-            to={"/blogs-and-art"}
-            className={styles["blogs-and-art-btn"]}
-            onClick={(e) => selectPage(e.target.id)}
-          >
-            Blogs and Art
-          </NavLink>
-          <NavLink
-            id="sites"
-            to="/sites"
-            className={styles["sites-btn"]}
-            onClick={(e) => selectPage(e.target.id)}
-          >
-            Sites
-          </NavLink>
-        </nav>
+        <div className={styles.static}>
+          <nav className={`${styles["btn-container"]} `}>
+            <NavLink
+              id="home"
+              to={"/home"}
+              className={styles["home-btn"]}
+              onClick={(e) => selectPage(e.target.id)}
+            >
+              Home
+            </NavLink>
+            <div className={styles["rotating-btns"]} id={rotationClass}>
+              <NavLink
+                id="about"
+                to={"/about"}
+                className={styles["about-btn"]}
+                onClick={(e) => selectPage(e.target.id)}
+              >
+                About
+              </NavLink>
+              <NavLink
+                id="blogs-and-art"
+                to={"/blogs-and-art"}
+                className={styles["blogs-and-art-btn"]}
+                onClick={(e) => selectPage(e.target.id)}
+              >
+                Blogs and Art
+              </NavLink>
+              <NavLink
+                id="sites"
+                to="/sites"
+                className={styles["sites-btn"]}
+                onClick={(e) => selectPage(e.target.id)}
+              >
+                Sites
+              </NavLink>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -1,12 +1,12 @@
 import React from "react";
 
-function MoonLady(rotationClass) {
+function MoonLady({ rotationClass }) {
   console.log(rotationClass);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 360 360"
-      id={rotationClass}
+      // id={rotationClass}
       className="moon-lady"
     >
       {/* <g
@@ -63,14 +63,15 @@ function MoonLady(rotationClass) {
         style={{ fontVariationSettings: "'wght' 200" }}
         paintOrder="stroke markers fill"
       ></circle>
-      {/* <path
+      <path
+        // id={rotationClass}
         className="arrow"
         fill="#434358"
         d="M245.438 270.657c-3.676 2.544-14.765-7.035-18.8-8.957s-18.44-4.491-18.8-8.958 13.454-9.31 17.13-11.855 13.094-13.778 17.129-11.856 1.312 16.346 1.67 20.813 5.347 18.268 1.671 20.813z"
         style={{ fontVariationSettings: "'wght' 200" }}
         paintOrder="stroke markers fill"
-      ></path> */}
-      <g>
+      ></path>
+      <g id={rotationClass + "counter"}>
         <g strokeWidth="1.099">
           <path
             fill="#3d2d23"
@@ -381,12 +382,12 @@ function MoonLady(rotationClass) {
           ></path>
         </g>
       </g>
-      <path
+      {/* <path
         fill="#232333"
         d="M151.12 7.043a131.23 131.23 0 00-70.328 22.838c-59.835 40.898-75.186 122.56-34.289 182.39 40.898 59.836 122.56 75.188 182.39 34.289C288.728 205.661 304.079 124 263.18 64.17A131.228 131.228 0 00151.12 7.045zm5.934 29.884a107.02 107.02 0 0191.39 46.587c33.352 48.796 20.832 115.39-27.964 148.74-48.796 33.353-115.39 20.834-148.74-27.962-33.354-48.796-20.835-115.39 27.962-148.75a107.023 107.023 0 0157.355-18.623z"
         style={{ fontVariationSettings: "'wght' 200" }}
         paintOrder="stroke markers fill"
-      ></path>
+      ></path> */}
     </svg>
   );
 }
