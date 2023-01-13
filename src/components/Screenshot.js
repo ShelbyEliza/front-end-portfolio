@@ -8,9 +8,11 @@ import underTheShelf from "../assets/sites-screenshots/under-the-shelf.png";
 import piddleTogether from "../assets/sites-screenshots/piddle-together.png";
 // eslint-disable-next-line
 import financeTracker from "../assets/sites-screenshots/finance-tracker.png";
+// eslint-disable-next-line
+import snakeGame from "../assets/sites-screenshots/snake-game.png";
 
 export default function Screenshot(site) {
-  // console.log(financeTracker);
+  // console.log(snakeGame);
   return (
     <div className={styles["shot-container"]}>
       <img

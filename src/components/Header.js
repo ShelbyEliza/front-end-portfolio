@@ -5,7 +5,7 @@ import "../css/MoonMenu.css";
 // assets:
 import OuterMoon from "../assets/menu-images/OuterMoon";
 import MoonFace from "../assets/menu-images/MoonFace";
-import RotationRing from "../assets/menu-images/RotationRing-opt";
+import RotationRing from "../assets/menu-images/RotationRing";
 
 import usePathName from "../hooks/usePathName";
 import { useState } from "react";

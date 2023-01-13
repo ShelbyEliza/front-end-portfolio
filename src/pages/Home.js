@@ -5,6 +5,9 @@ export default function Home() {
     <div className={styles.home}>
       {/* <div className={`${styles.tester} ${styles.animation}`}></div> */}
       <main>
+        <i class="ai-cross"></i>
+        <i class="ai-circle"></i>
+        <i class="ai-heart"></i>
         <p className={styles.text}>
           He was a rather silent man, though perfectly good-humored. No
           clumsiness of Arren's fretted him; he was companionable; there could
