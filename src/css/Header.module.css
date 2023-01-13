@@ -4,24 +4,12 @@ header {
   width: 100vw;
   height: 400px;
   padding: 20px;
-  /* border-bottom: 0.04rem solid rgba(188, 168, 94, 0.575);
-  box-shadow: 0rem 0rem 0.6rem 0.01rem rgba(188, 168, 94, 0.575); */
-
-  /*   background: radial-gradient(
-    circle at center,
-    var(--packing-paper) 0,
-    var(--midnight-sky) 38%,
-    var(--shuriken) 60%,
-    var(--infinity) 100%
-  );
-} */
 
   background: radial-gradient(
     circle at center,
-    var(--eggnog) 0,
+    var(--eggnog) 2%,
     var(--shuriken) 26%,
-    var(--midnight-sky) 32%,
-    var(--shuriken) 46%,
+    /* var(--midnight-sky) 32%, */ var(--shuriken) 46%,
     var(--infinity) 100%
   );
 }
@@ -57,26 +45,36 @@ header {
 .sites-selected-from-blogs-and-art {
   animation: 1s linear 0s 1 normal both running rotate-sites-from-blogs-and-art;
 }
-
-.btn-container {
+.static {
   position: absolute;
   width: 360px;
   height: 360px;
+}
+.btn-container {
+  width: 360px;
+  height: 360px;
 
-  rotate: -2deg;
+  z-index: 2;
+  border-radius: 100%;
+  /* rotate: 28deg; */
+}
+.rotating-btns {
+  width: 360px;
+  height: 360px;
 
   z-index: 2;
   border-radius: 100%;
   rotate: 28deg;
 }
+
+/* set click box text color to transparent */
 .btn-container a {
   color: rgba(255, 255, 255, 0);
 }
-.btn-container a:first-of-type {
-  color: rgb(255, 255, 255);
-}
 
-.btn-container a:hover {
+.blogs-and-art-btn:hover,
+.about-btn:hover,
+.sites-btn:hover {
   background: rgba(188, 168, 94, 0.342);
 }
 
@@ -98,16 +96,13 @@ header {
   /* border: 1px solid salmon; */
 }
 .home-btn {
-  height: 100px;
-  width: 100px;
+  height: 263px;
+  width: 263px;
   padding: 0.8rem;
   justify-content: center;
-  rotate: -28deg;
 
-  /* text-align: center; */
-
-  top: 80px;
-  right: 160px;
+  top: 6px;
+  right: 74px;
 
   border-radius: 100%;
   /* border: 2px dotted var(--white); */
@@ -119,28 +114,28 @@ header {
   height: 40px;
   width: 86px;
 
-  top: 302px;
-  right: 190px;
+  top: 308px;
+  right: 117px;
 
-  rotate: 12deg;
+  rotate: -12deg;
 }
 .blogs-and-art-btn {
   height: 50px;
   width: 152px;
 
-  top: 278px;
-  right: 34px;
+  top: 230px;
+  right: -14px;
 
-  rotate: -30deg;
+  rotate: -64deg;
 }
 .sites-btn {
   height: 34px;
   width: 74px;
 
-  top: 200px;
-  right: -2px;
+  top: 128px;
+  right: 0px;
 
-  rotate: -62deg;
+  rotate: -92deg;
 }
 .about-btn:hover,
 .blogs-and-art-btn:hover,
@@ -148,12 +143,12 @@ header {
   cursor: pointer;
 }
 
-@keyframes rotate-about-from-blogs-and-art {
+/* @keyframes rotate-about-from-blogs-and-art {
   from {
-    transform: rotate(-2deg);
+    transform: rotate(2deg);
   }
   to {
-    transform: rotate(-54deg);
+    transform: rotate(54deg);
   }
 }
 @keyframes rotate-about-from-sites {
@@ -195,7 +190,7 @@ header {
   to {
     transform: rotate(40deg);
   }
-}
+} */
 
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */

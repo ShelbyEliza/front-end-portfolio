@@ -38,7 +38,7 @@ export default function InnerMoon({ rotationClass }) {
           cx="-247.233"
           cy="-418.929"
           r="131.231"
-          fill="#2f2f44"
+          fill="#232333ff"
           strokeWidth="1"
           display="inline"
           paintOrder="stroke markers fill"
@@ -46,6 +46,20 @@ export default function InnerMoon({ rotationClass }) {
           transform="rotate(145.647)"
         ></circle>
       </g>
+      {/* <path
+        className="outer-ring"
+        fill="#434358"
+        d="M151.12 7.043a131.23 131.23 0 00-70.328 22.838 131.23 131.23 0 00-34.289 182.39 131.23 131.23 0 00182.39 34.289A131.23 131.23 0 00263.18 64.17 131.23 131.23 0 00151.12 7.045zm.268 9.38a121.85 121.85 0 01104.05 53.042 121.85 121.85 0 01-31.838 169.35 121.85 121.85 0 01-169.35-31.836 121.85 121.85 0 0131.836-169.35 121.85 121.85 0 0165.3-21.203z"
+        style={{ fontVariationSettings: "'wght' 200" }}
+        paintOrder="stroke markers fill"
+      ></path>
+      <path
+        className="arrow"
+        fill="#434358"
+        d="M245.438 270.657c-3.676 2.544-14.765-7.035-18.8-8.957s-18.44-4.491-18.8-8.958 13.454-9.31 17.13-11.855 13.094-13.778 17.129-11.856 1.312 16.346 1.67 20.813 5.347 18.268 1.671 20.813z"
+        style={{ fontVariationSettings: "'wght' 200" }}
+        paintOrder="stroke markers fill"
+      ></path> */}
     </svg>
   );
 }

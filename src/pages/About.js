@@ -1,7 +1,6 @@
 // css:
 import styles from "../css/About.module.css";
 // import avatar from "../assets/creepy-cat-opt.svg";
-import burst from "../assets/burst-opt.svg";
 
 import { useCollection } from "../hooks/useCollection";
 import { useState, useEffect } from "react";
@@ -41,15 +40,14 @@ export default function About() {
               <section className={styles["title-section"]}>
                 <h1 className={styles["page-heading"]}>Shelby Shipley</h1>
               </section>
-
-              <figure className={styles["photo-section"]}>
+              {/* <figure className={styles["photo-section"]}>
                 <img
                   className={styles.photo}
-                  src={burst}
+                  src={}
                   alt="where the site's author's professional pic will go"
                 />
                 <figcaption>Photo</figcaption>
-              </figure>
+              </figure> */}
               <section className={styles["skills-section"]}>
                 {/* <div> */}
                 <h2 className={styles["section-heading"]}>Skills</h2>

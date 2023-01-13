@@ -33,7 +33,7 @@ You may also see any lint errors in the console.
 The banner was generated using [doodad.dev](https://doodad.dev/pattern-generator/?utm_source=toolkit.addy.codes).
 The rest of the assets and logo were created by me, Shelby.
 
-## Project Staus
+## Project Status
 
 This portfolio is a work in progress! More websites, blogs, and art will be added as I develop as a developer.
 

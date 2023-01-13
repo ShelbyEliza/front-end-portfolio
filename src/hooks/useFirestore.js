@@ -1,20 +1,10 @@
 // import { db } from "../firebase/config";
 
-// firebase imports:
-// import {
-//   collection,
-//   doc,
-//   getDocs,
-//   getDoc,
-//   addDoc,
-//   setDoc,
-//   deleteDoc,
-//   query,
-//   where,
-//   limit,
-//   updateDoc,
-//   arrayUnion,
-//   arrayRemove,
-// } from "firebase/firestore";
+// // firebase imports:
+// import { getStorage, ref } from "firebase/firestore";
 
-export const useFirestore = () => {};
+// export const useFirestore = () => {
+//   const storage = getStorage()
+//   const imagesRef = ref(storage, "screenshots")
+
+// };
