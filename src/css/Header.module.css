@@ -7,7 +7,7 @@ header {
 
   background: radial-gradient(
     circle at center,
-    var(--eggnog) 2%,
+    var(--eggnog) 0%,
     var(--shuriken) 26%,
     /* var(--midnight-sky) 32%, */ var(--shuriken) 46%,
     var(--infinity) 100%

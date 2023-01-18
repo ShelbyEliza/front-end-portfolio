@@ -1,6 +1,13 @@
 // css:
 import styles from "../css/About.module.css";
-// import avatar from "../assets/creepy-cat-opt.svg";
+import {
+  SiJavascript,
+  SiReact,
+  SiCss3,
+  SiHtml5,
+  SiFirebase,
+  SiInkscape,
+} from "react-icons/si";
 
 import { useCollection } from "../hooks/useCollection";
 import { useState, useEffect } from "react";
@@ -40,27 +47,68 @@ export default function About() {
               <section className={styles["title-section"]}>
                 <h1 className={styles["page-heading"]}>Shelby Shipley</h1>
               </section>
-              {/* <figure className={styles["photo-section"]}>
+              <figure className={styles["photo-section"]}>
                 <img
                   className={styles.photo}
-                  src={}
-                  alt="where the site's author's professional pic will go"
+                  // src={}
+                  alt="A place for a photo of the author of the site."
                 />
                 <figcaption>Photo</figcaption>
-              </figure> */}
+              </figure>
               <section className={styles["skills-section"]}>
                 {/* <div> */}
+
                 <h2 className={styles["section-heading"]}>Skills</h2>
                 {document && (
                   <ul className={`${styles["skills-list"]} ${styles.content}`}>
-                    {skills.map((skill) => {
-                      return (
-                        <li key={skill} className={styles.skill}>
-                          <span>{skill}</span>
-                          {/** TODO: add an aside element with a little detail about experience ? */}
-                        </li>
-                      );
-                    })}
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiJavascript className={styles.fig} />
+                      </figure>
+                      <figcaption>
+                        <h4>JavaScript</h4>
+                      </figcaption>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiReact className={styles.fig} />
+                      </figure>
+                      <figcaption>
+                        <h4>React</h4>
+                      </figcaption>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiCss3 className={styles.fig} />
+                      </figure>
+                      <figcaption>
+                        <h4>CSS</h4>
+                      </figcaption>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiHtml5 className={styles.fig} />
+                      </figure>
+                      <figcaption>
+                        <h4>HTML</h4>
+                      </figcaption>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiFirebase className={styles.fig} />
+                      </figure>
+                      <figcaption>
+                        <h4>Firebase</h4>
+                      </figcaption>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiInkscape className={styles.fig} />
+                      </figure>
+                      <figcaption>
+                        <h4>Vector Art</h4>
+                      </figcaption>
+                    </li>
                   </ul>
                 )}
                 {/* </div> */}

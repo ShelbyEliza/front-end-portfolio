@@ -29,6 +29,7 @@ const textStyle = {
   whiteSpace: "normal",
   fontFamily: "'Josefin Sans Thin'",
   fontSize: "32",
+  // fill: "#feeaa0",
 };
 
 export default function OuterMoon({ rotationClass }) {
@@ -99,6 +100,7 @@ export default function OuterMoon({ rotationClass }) {
           d="m 619.10247,285.40161 c -4.00914,14.74326 -10.14256,29.1744 -18.50238,42.87133 -13.29769,21.78725 -30.82297,39.41367 -50.87711,52.46821 -40.93009,26.64407 -92.3944,34.24354 -139.95044,19.30376"
         />
       </defs>
+
       <g transform="translate(-285.67 -68.125)">
         <circle
           id="outer-circle"
@@ -112,41 +114,43 @@ export default function OuterMoon({ rotationClass }) {
           style={{ fontVariationSettings: "'wght' 200" }}
         ></circle>
 
-        <g transform="translate(24.45 -208.84)">
-          <text
-            id={rotationClass + "-about-box"}
-            onClick={(e) => logClick(e.target.id)}
-            fontSize="32"
-            style={textStyle}
-          >
-            <textPath xlinkHref="#pathAbout">
-              <tspan id="about">About</tspan>
-            </textPath>
-          </text>
-        </g>
-        <g transform="translate(24.466 -208.84)">
-          <text
-            id={rotationClass + "-blogs-and-art-box"}
-            onClick={(e) => logClick(e.target.id)}
-            fontSize="32"
-            style={textStyle}
-          >
-            <textPath xlinkHref="#pathBlogsAndArt">
-              <tspan id="blogsAndArt">Blogs &amp; Art</tspan>
-            </textPath>
-          </text>
-        </g>
-        <g transform="translate(24.438 -208.82)">
-          <text
-            id={rotationClass + "-sites-box"}
-            onClick={(e) => logClick(e.target.id)}
-            fontSize="32"
-            style={textStyle}
-          >
-            <textPath xlinkHref="#pathSites">
-              <tspan id="sites">Sites</tspan>
-            </textPath>
-          </text>
+        <g>
+          <g transform="translate(24.45 -208.84)">
+            <text
+              id={rotationClass + "-about-box"}
+              onClick={(e) => logClick(e.target.id)}
+              fontSize="32"
+              style={textStyle}
+            >
+              <textPath xlinkHref="#pathAbout">
+                <tspan id="about">About</tspan>
+              </textPath>
+            </text>
+          </g>
+          <g transform="translate(24.466 -208.84)">
+            <text
+              id={rotationClass + "-blogs-and-art-box"}
+              onClick={(e) => logClick(e.target.id)}
+              fontSize="32"
+              style={textStyle}
+            >
+              <textPath xlinkHref="#pathBlogsAndArt">
+                <tspan id="blogsAndArt">Blogs &amp; Art</tspan>
+              </textPath>
+            </text>
+          </g>
+          <g transform="translate(24.438 -208.82)">
+            <text
+              id={rotationClass + "-sites-box"}
+              onClick={(e) => logClick(e.target.id)}
+              fontSize="32"
+              style={textStyle}
+            >
+              <textPath xlinkHref="#pathSites">
+                <tspan id="sites">Sites</tspan>
+              </textPath>
+            </text>
+          </g>
         </g>
       </g>
     </svg>

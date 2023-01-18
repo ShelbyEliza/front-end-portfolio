@@ -10,9 +10,11 @@ import piddleTogether from "../assets/sites-screenshots/piddle-together.png";
 import financeTracker from "../assets/sites-screenshots/finance-tracker.png";
 // eslint-disable-next-line
 import snakeGame from "../assets/sites-screenshots/snake-game.png";
+// eslint-disable-next-line
+import magicCardGame from "../assets/sites-screenshots/magic-card-game.png";
 
 export default function Screenshot(site) {
-  // console.log(snakeGame);
+  // console.log(magicCardGame);
   return (
     <div className={styles["shot-container"]}>
       <img
