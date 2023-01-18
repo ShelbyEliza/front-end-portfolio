@@ -64,7 +64,7 @@ header {
 
   z-index: 2;
   border-radius: 100%;
-  rotate: 28deg;
+  /* rotate: 28deg; */
 }
 
 /* set click box text color to transparent */
@@ -78,7 +78,6 @@ header {
   background: rgba(188, 168, 94, 0.342);
 }
 
-.home-btn,
 .blogs-and-art-btn,
 .about-btn,
 .sites-btn {
@@ -92,105 +91,46 @@ header {
   background: none;
 
   z-index: 1;
-
-  /* border: 1px solid salmon; */
-}
-.home-btn {
-  height: 263px;
-  width: 263px;
-  padding: 0.8rem;
-  justify-content: center;
-
-  top: 6px;
-  right: 74px;
-
-  border-radius: 100%;
-  /* border: 2px dotted var(--white); */
-
-  /* background: var(--sweet-perfume); */
 }
 
-.about-btn {
-  height: 40px;
-  width: 86px;
-
-  top: 308px;
-  right: 117px;
-
-  rotate: -12deg;
-}
 .blogs-and-art-btn {
-  height: 50px;
+  height: 43px;
   width: 152px;
 
-  top: 230px;
-  right: -14px;
+  top: 302px;
+  left: 75px;
 
-  rotate: -64deg;
+  rotate: 12deg;
+  /* border-top: 1px solid salmon;
+  border-bottom: 1px solid var(--infinity); */
+}
+.about-btn {
+  height: 48px;
+  width: 84px;
+
+  top: 280px;
+  left: 222px;
+
+  rotate: -30deg;
+  /* border-top: 1px solid salmon;
+  border-bottom: 1px solid var(--infinity); */
 }
 .sites-btn {
   height: 34px;
-  width: 74px;
+  width: 68px;
 
-  top: 128px;
-  right: 0px;
+  top: 232px;
+  left: 283px;
 
-  rotate: -92deg;
+  rotate: -60deg;
+  /* border-top: 1px solid salmon;
+  border-bottom: 1px solid var(--infinity); */
 }
 .about-btn:hover,
 .blogs-and-art-btn:hover,
 .sites-btn:hover {
   cursor: pointer;
 }
-
-/* @keyframes rotate-about-from-blogs-and-art {
-  from {
-    transform: rotate(2deg);
-  }
-  to {
-    transform: rotate(54deg);
-  }
-}
-@keyframes rotate-about-from-sites {
-  from {
-    transform: rotate(40deg);
-  }
-  to {
-    transform: rotate(-54deg);
-  }
-}
-@keyframes rotate-blogs-and-art-from-about {
-  from {
-    transform: rotate(-54deg);
-  }
-  to {
-    transform: rotate(-2deg);
-  }
-}
-@keyframes rotate-blogs-and-art-from-sites {
-  from {
-    transform: rotate(40deg);
-  }
-  to {
-    transform: rotate(-2deg);
-  }
-}
-@keyframes rotate-sites-from-about {
-  from {
-    transform: rotate(-54deg);
-  }
-  to {
-    transform: rotate(40deg);
-  }
-}
-@keyframes rotate-sites-from-blogs-and-art {
-  from {
-    transform: rotate(-2deg);
-  }
-  to {
-    transform: rotate(40deg);
-  }
-} */
 
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */

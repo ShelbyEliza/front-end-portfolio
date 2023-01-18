@@ -4,6 +4,7 @@ import "../css/MoonMenu.css";
 
 // assets:
 import OuterMoon from "../assets/menu-images/OuterMoon";
+import OuterMoon2 from "../assets/menu-images/OuterMoon2";
 import MoonFace from "../assets/menu-images/MoonFace";
 import RotationRing from "../assets/menu-images/RotationRing";
 
@@ -34,29 +35,22 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles["header-container"]}>
         <section className={styles["moon-container"]}>
-          <OuterMoon rotationClass={rotationClass} />
+          {/* <OuterMoon rotationClass={rotationClass} /> */}
+          <OuterMoon2 rotationClass={rotationClass} />
           <MoonFace rotationClass={rotationClass} />
           <RotationRing rotationClass={rotationClass} />
         </section>
         <div className={styles.static}>
           <nav className={`${styles["btn-container"]} `}>
-            <NavLink
+            {/* <NavLink
               id="home"
               to={"/home"}
               className={styles["home-btn"]}
               onClick={(e) => selectPage(e.target.id)}
             >
               Home
-            </NavLink>
+            </NavLink> */}
             <div className={styles["rotating-btns"]} id={rotationClass}>
-              <NavLink
-                id="about"
-                to={"/about"}
-                className={styles["about-btn"]}
-                onClick={(e) => selectPage(e.target.id)}
-              >
-                About
-              </NavLink>
               <NavLink
                 id="blogs-and-art"
                 to={"/blogs-and-art"}
@@ -64,6 +58,14 @@ export default function Header() {
                 onClick={(e) => selectPage(e.target.id)}
               >
                 Blogs and Art
+              </NavLink>
+              <NavLink
+                id="about"
+                to={"/about"}
+                className={styles["about-btn"]}
+                onClick={(e) => selectPage(e.target.id)}
+              >
+                About
               </NavLink>
               <NavLink
                 id="sites"

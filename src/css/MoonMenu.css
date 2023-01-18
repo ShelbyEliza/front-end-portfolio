@@ -34,73 +34,66 @@
   fill: rgb(99, 94, 188);
 }
 
-@keyframes rotate-about-from-blogs-and-art {
-  from {
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-  }
-  to {
-    transform-origin: 50% 50%;
-    transform: rotate(-52deg);
-  }
-}
-@keyframes rotate-about-from-sites {
-  from {
-    transform-origin: 50% 50%;
-    transform: rotate(42deg);
-  }
-  to {
-    transform-origin: 50% 50%;
-    transform: rotate(-52deg);
-  }
-}
 @keyframes rotate-blogs-and-art-from-about {
   from {
     transform-origin: 50% 50%;
-    transform: rotate(-52deg);
+    transform: rotate(0deg);
   }
   to {
     transform-origin: 50% 50%;
-    transform: rotate(0deg);
+    transform: rotate(-38deg);
   }
 }
 @keyframes rotate-blogs-and-art-from-sites {
   from {
     transform-origin: 50% 50%;
-    transform: rotate(42deg);
+    transform: rotate(28deg);
+  }
+  to {
+    transform-origin: 50% 50%;
+    transform: rotate(-38deg);
+  }
+}
+@keyframes rotate-about-from-blogs-and-art {
+  from {
+    transform-origin: 50% 50%;
+    transform: rotate(-38deg);
   }
   to {
     transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
 }
-@keyframes rotate-sites-from-about {
+@keyframes rotate-about-from-sites {
   from {
     transform-origin: 50% 50%;
-    transform: rotate(-52deg);
+    transform: rotate(28deg);
   }
   to {
     transform-origin: 50% 50%;
-    transform: rotate(42deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes rotate-sites-from-blogs-and-art {
   from {
     transform-origin: 50% 50%;
+    transform: rotate(-38deg);
+  }
+  to {
+    transform-origin: 50% 50%;
+    transform: rotate(28deg);
+  }
+}
+@keyframes rotate-sites-from-about {
+  from {
+    transform-origin: 50% 50%;
     transform: rotate(0deg);
   }
   to {
     transform-origin: 50% 50%;
-    transform: rotate(42deg);
+    transform: rotate(28deg);
   }
 }
-.about-text {
-  color: var(--mangala-pink);
-
-  text-shadow: var(--sweet-perfume) 0rem 0 0.8rem;
-
-  /* background: var(--perrywinkle--super-trans); */
-
-  border: 0.08rem solid var(--sweet-perfume-trans);
-  border-radius: 1rem;
+#sites-top-box:hover {
+  fill: var(--fawn);
 }
