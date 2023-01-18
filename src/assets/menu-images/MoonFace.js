@@ -8,60 +8,6 @@ function MoonFace(rotationClass) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 360 360"
     >
-      <g
-        paintOrder="stroke markers fill"
-        transform="translate(-285.67 -68.125)"
-      >
-        {/* <circle
-          cx="495.97"
-          cy="180.06"
-          r="180"
-          fill="#bca85e"
-          stopColor="#000"
-          transform="rotate(8.097)"
-          style={{ fontVariationSettings: "'wght' 200" }}
-        ></circle> */}
-        {/* <circle
-          cx="-247.23"
-          cy="-418.93"
-          r="131.23"
-          fill="#2f2f44"
-          transform="rotate(145.65)"
-          style={{ fontVariationSettings: "'wght' 200" }}
-        ></circle> */}
-        {/* <g fill="none" strokeOpacity="0">
-          <path
-            d="M373.03 383.34a165.56 165.56 40.704 00227.57-55.065 165.56 165.56 40.704 00-55.065-227.57 165.56 165.56 40.704 00-227.57 55.065 165.56 165.56 40.704 0055.065 227.57z"
-            // fill="#2f2f44"
-            style={{ fontVariationSettings: "'wght' 200" }}
-          ></path>
-          <path
-            d="M469.76 407.25a165.56 165.56 5.683 00154.77-175.69A165.56 165.56 5.683 00448.84 76.79a165.56 165.56 5.683 00-154.77 175.69 165.56 165.56 5.683 00175.69 154.77z"
-            // fill="#2f2f44"
-            style={{ fontVariationSettings: "'wght' 200" }}
-          ></path>
-          <path
-            d="M606.99 316.78A165.56 165.56 36.152 00534.035 94.3a165.56 165.56 36.152 00-222.48 72.955 165.56 165.56 36.152 0072.955 222.48 165.56 165.56 36.152 00222.48-72.955z"
-            // fill="#2f2f44"
-            style={{ fontVariationSettings: "'wght' 200" }}
-          ></path>
-        </g> */}
-        {/* <circle
-          cx="-247.23"
-          cy="-418.93"
-          r="131.23"
-          fill="#2f2f44"
-          transform="rotate(145.65)"
-          style={{ fontVariationSettings: "'wght' 200" }}
-        ></circle> */}
-      </g>
-      {/* <path
-        className="arrow"
-        fill="#434358"
-        d="M245.438 270.657c-3.676 2.544-14.765-7.035-18.8-8.957s-18.44-4.491-18.8-8.958 13.454-9.31 17.13-11.855 13.094-13.778 17.129-11.856 1.312 16.346 1.67 20.813 5.347 18.268 1.671 20.813z"
-        style={{ fontVariationSettings: "'wght' 200" }}
-        paintOrder="stroke markers fill"
-      ></path> */}
       <circle
         className="dark-bg"
         cx="-247.23"
@@ -327,13 +273,6 @@ function MoonFace(rotationClass) {
           className="UnoptimicedTransforms"
         ></path>
       </g>
-      {/* <path
-        className="outer-ring"
-        fill="#434358"
-        d="M151.12 7.043a131.23 131.23 0 00-70.328 22.838 131.23 131.23 0 00-34.289 182.39 131.23 131.23 0 00182.39 34.289A131.23 131.23 0 00263.18 64.17 131.23 131.23 0 00151.12 7.045zm.268 9.38a121.85 121.85 0 01104.05 53.042 121.85 121.85 0 01-31.838 169.35 121.85 121.85 0 01-169.35-31.836 121.85 121.85 0 0131.836-169.35 121.85 121.85 0 0165.3-21.203z"
-        style={{ fontVariationSettings: "'wght' 200" }}
-        paintOrder="stroke markers fill"
-      ></path> */}
     </svg>
   );
 }

@@ -1,4 +1,6 @@
-svg {
+.outer-moon,
+.rotation-ring,
+.moon-face {
   position: absolute;
   height: 360px;
   width: 360px;
@@ -91,4 +93,14 @@ svg {
     transform-origin: 50% 50%;
     transform: rotate(42deg);
   }
+}
+.about-text {
+  color: var(--mangala-pink);
+
+  text-shadow: var(--sweet-perfume) 0rem 0 0.8rem;
+
+  /* background: var(--perrywinkle--super-trans); */
+
+  border: 0.08rem solid var(--sweet-perfume-trans);
+  border-radius: 1rem;
 }
