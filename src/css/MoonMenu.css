@@ -5,6 +5,10 @@
   height: 360px;
   width: 360px;
 }
+/* .outer-moon {
+  box-shadow: 0rem 0rem 2rem 1.5rem rgba(91, 91, 116, 0.475);
+  border-radius: 50%;
+} */
 
 #about-selected-from-blogs-and-art {
   animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;
@@ -16,13 +20,15 @@
   animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-about;
 }
 #blogs-and-art-selected-from-sites {
-  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-sites;
+  animation: 1.8s linear 0s 1 normal both running
+    rotate-blogs-and-art-from-sites;
 }
 #sites-selected-from-about {
   animation: 1s linear 0s 1 normal both running rotate-sites-from-about;
 }
 #sites-selected-from-blogs-and-art {
-  animation: 1s linear 0s 1 normal both running rotate-sites-from-blogs-and-art;
+  animation: 1.8s linear 0s 1 normal both running
+    rotate-sites-from-blogs-and-art;
 }
 
 #about-selected-from-blogs-and-art-about-box,

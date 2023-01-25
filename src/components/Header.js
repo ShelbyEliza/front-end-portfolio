@@ -4,28 +4,37 @@ import "../css/MoonMenu.css";
 
 // assets:
 import OuterMoon from "../assets/menu-images/OuterMoon";
-import OuterMoon2 from "../assets/menu-images/OuterMoon2";
 import MoonFace from "../assets/menu-images/MoonFace";
 import RotationRing from "../assets/menu-images/RotationRing";
 
 import usePathName from "../hooks/usePathName";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
+  /** pathName = current page */
   let pathName = usePathName();
   const [rotationClass, setRotationClass] = useState(pathName);
-  const [previousClass, setPreviousClass] = useState("blogs-and-art");
+  const [previousClass, setPreviousClass] = useState("home");
+
+  /**
+   * only run useEffect once on initial load.
+   * initial load -> menu pointer points at the About position.
+   *    if site loads from any page other than About
+   *    OuterMoon must rotate into position.
+   */
+  useEffect(() => {
+    let pageSelected = pathName + "-selected-from-about";
+    setRotationClass(pageSelected);
+    setPreviousClass(pathName);
+    console.log("Initial load");
+    // eslint-disable-next-line
+  }, []);
 
   const selectPage = (page) => {
     let pageSelected = page + "-selected-from-" + previousClass;
-    if (page === "home") {
-      setRotationClass(pageSelected);
-      setPreviousClass("blogs-and-art");
-    } else if (
-      page !== previousClass ||
-      (page === "blogs-and-art" && previousClass === "blogs-and-art")
-    ) {
+    if (page !== previousClass) {
       setRotationClass(pageSelected);
       setPreviousClass(page);
     }
@@ -35,21 +44,12 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles["header-container"]}>
         <section className={styles["moon-container"]}>
-          {/* <OuterMoon rotationClass={rotationClass} /> */}
-          <OuterMoon2 rotationClass={rotationClass} />
+          <OuterMoon rotationClass={rotationClass} pathName={pathName} />
           <MoonFace rotationClass={rotationClass} />
           <RotationRing rotationClass={rotationClass} />
         </section>
         <div className={styles.static}>
           <nav className={`${styles["btn-container"]} `}>
-            {/* <NavLink
-              id="home"
-              to={"/home"}
-              className={styles["home-btn"]}
-              onClick={(e) => selectPage(e.target.id)}
-            >
-              Home
-            </NavLink> */}
             <div className={styles["rotating-btns"]} id={rotationClass}>
               <NavLink
                 id="blogs-and-art"

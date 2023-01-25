@@ -5,11 +5,11 @@ export default function usePathName() {
   let locationPath = useLocation().pathname;
 
   if (
-    locationPath !== "/about" &&
+    // locationPath !== "/about" &&
     locationPath !== "/blogs-and-art" &&
     locationPath !== "/sites"
   ) {
-    locationPath = "/home";
+    locationPath = "/about";
   }
 
   let pathName = locationPath.match(regex).join("");

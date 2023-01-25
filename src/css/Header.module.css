@@ -5,13 +5,55 @@ header {
   height: 400px;
   padding: 20px;
 
-  background: radial-gradient(
+  /* background-image: linear-gradient(
+      180deg,
+      #232333 0%,
+      #282839 8.67%,
+      #2d2d3f 17.33%,
+      #333345 26%,
+      #38384c 34.67%,
+      #434358 52%,
+      #604e69 57.83%,
+      #825677 63.67%,
+      #aa5c7a 69.5%,
+      #cd675d 75.33%,
+      #bba75d 87%,
+      #bf8c5f 88.33%,
+      #cd675d 89.67%,
+      #aa5c7a 91%,
+      #825677 92.33%,
+      #434358 95%,
+      #3d3d52 95.83%,
+      #38384c 96.67%,
+      #333345 97.5%,
+      #2d2d3f 98.33%,
+      #232333 100%
+    ),
+    linear-gradient(
+      90deg,
+      #232333 1%,
+      #232333 25.75%,
+      #232333 50.5%,
+      #232333 100%
+    ); */
+
+  /* color: rgba(35, 35, 51, 0.276); */
+  /* background-image: linear-gradient(
+    360deg,
+    #2f2f44 1%,
+    #9898dd 28.5%,
+    #dd98bb 51%,
+    #9898dd 78.5%,
+    #2f2f44 100%
+  ); */
+
+  /* background: radial-gradient(
     circle at center,
     var(--eggnog) 0%,
     var(--shuriken) 26%,
-    /* var(--midnight-sky) 32%, */ var(--shuriken) 46%,
+    var(--shuriken) 46%,
     var(--infinity) 100%
-  );
+  ); */
 }
 .moon-container {
   display: flex;

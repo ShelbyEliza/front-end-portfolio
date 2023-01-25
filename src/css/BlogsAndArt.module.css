@@ -5,6 +5,8 @@
   border: 0.08rem solid var(--perrywinkle-trans);
   box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans);
   border-radius: 2rem;
+
+  background: var(--perrywinkle--super-trans);
 }
 .page-heading {
   border-top-left-radius: 2rem;
