@@ -5,7 +5,7 @@ const textPathStyles = {
   fill: "#fff",
 };
 const textPathStylesSelected = {
-  fill: "var(--midnight-sky)",
+  fill: "var(--happy-hearts)",
 };
 const backBoxStyles = {
   paintOrder: "stroke markers fill",
@@ -16,7 +16,7 @@ const backBoxStyles = {
   // fill: "var(--happy-hearts)",
   // fillOpacity: "0.2",
   // filter: "hue-rotate(20deg)",
-  // filter: "drop-shadow(0rem 0rem 0.4rem ) var(--white)",
+  // filter: "drop-shadow(0rem 0rem 0.4rem ) var(--peekaboo)",
   // filter: "url(#blurMe)",
   // filter: "blur(4px)",
   // mixBlendMode: "hue",
