@@ -3,6 +3,7 @@ import styles from "../css/Header.module.css";
 import "../css/MoonMenu.css";
 
 // assets:
+import texture from "../assets/menu-images/moon-texture.png";
 import OuterMoon from "../assets/menu-images/OuterMoon";
 import MoonFace from "../assets/menu-images/MoonFace";
 import RotationRing from "../assets/menu-images/RotationRing";
@@ -44,6 +45,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles["header-container"]}>
         <section className={styles["moon-container"]}>
+          <img id={rotationClass} src={texture} alt="moon texture" />
           <OuterMoon rotationClass={rotationClass} pathName={pathName} />
           <MoonFace rotationClass={rotationClass} />
           <RotationRing rotationClass={rotationClass} />

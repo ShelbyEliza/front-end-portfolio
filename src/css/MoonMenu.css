@@ -100,6 +100,3 @@
     transform: rotate(28deg);
   }
 }
-#sites-top-box:hover {
-  fill: var(--fawn);
-}

@@ -14,7 +14,7 @@ function MoonFace(rotationClass) {
         cx="-247.23"
         cy="-418.93"
         r="131.23"
-        fill="var(--infinity)"
+        fill="var(--umbra)"
         transform="rotate(145.647 -118.832 -65.965) scale(.92849)"
         paintOrder="stroke markers fill"
       ></circle>

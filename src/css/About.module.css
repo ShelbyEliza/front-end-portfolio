@@ -4,12 +4,10 @@
   margin-bottom: 2rem;
 
   border-radius: 2rem;
-  /* box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans); */
 }
 .about-container section {
   display: flex;
   width: 100%;
-  /* border: 0.08rem solid var(--sweet-perfume); */
 }
 .about-container b {
   color: var(--creamy-berry);
@@ -29,7 +27,7 @@
 .edu-skills-section,
 .bottom-left,
 .bottom-right {
-  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-trans);
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-super-trans);
   border: 0.08rem solid var(--sweet-perfume);
 }
 
@@ -56,8 +54,8 @@
   font-weight: 700;
 }
 .col-2-content a:hover {
-  color: var(--packing-paper);
-  /* font-weight: 700; */
+  color: var(--sweet-perfume);
+  text-decoration: underline;
 }
 
 .col-2-content p {
@@ -88,7 +86,7 @@
 
   text-align: center;
 
-  background: var(--pastel-violet);
+  background: var(--moonraker);
   border-top-left-radius: 2rem;
 }
 .page-heading {
@@ -99,11 +97,12 @@
 .edu-skills-section .col-2-content {
   border-left: 0.04rem solid var(--sweet-perfume);
   border-right: 0.04rem solid var(--sweet-perfume);
-  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-trans);
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-super-trans);
 }
 .edu-skills-section .col-1,
 .passions-section .col-1 {
   background: var(--infinity);
+  padding-top: 2rem;
 }
 
 .bottom-left {
@@ -128,7 +127,6 @@
   align-items: center;
 
   margin-top: 1.2rem;
-  /* border: 0.08rem solid var(--sweet-perfume); */
 }
 .skill {
   display: flex;

@@ -2,17 +2,16 @@
 import "../../css/MoonMenu.css";
 
 const textPathStyles = {
-  fill: "#fff",
+  fill: "var(--infinity)",
 };
 const textPathStylesSelected = {
   fill: "var(--happy-hearts)",
 };
+/* TODO: make navlinks onhover less awkward */
 const backBoxStyles = {
   paintOrder: "stroke markers fill",
   fill: "none",
   // fill: "var(--sweet-perfume)",
-  // fill: "var(--eggnog)",
-  // fill: "var(--packing-paper)",
   // fill: "var(--happy-hearts)",
   // fillOpacity: "0.2",
   // filter: "hue-rotate(20deg)",
@@ -42,7 +41,7 @@ export default function OuterMoon({ rotationClass, pathName }) {
           cx="495.97"
           cy="180.06"
           r="180"
-          fill="#bca85e"
+          opacity="0"
           paintOrder="fill markers stroke"
           stopColor="#000"
           transform="rotate(8.097)"

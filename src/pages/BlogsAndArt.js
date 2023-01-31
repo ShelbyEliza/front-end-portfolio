@@ -28,9 +28,10 @@ export default function BlogsAndArt() {
           {blogs && (
             <>
               <section className={styles["blogs-section"]}>
-                <h1 className={styles["page-heading"]}>
-                  Checkout Some of my Programming Notes!
-                </h1>
+                <div className={styles["top"]}>
+                  <h1 className={styles["page-heading"]}>Checkout</h1>
+                  <h3>my programming notes</h3>
+                </div>
                 <ul className={styles["blogs-list"]}>
                   {blogs.map((blog) => {
                     return (
@@ -48,9 +49,10 @@ export default function BlogsAndArt() {
                 </ul>
               </section>
               <section className={styles["art-section"]}>
-                <h1 className={styles["page-heading"]}>
-                  Checkout Some of my Vector Art!
-                </h1>
+                <div className={styles["bottom"]}>
+                  <h1 className={styles["section-heading"]}>Checkout</h1>
+                  <h3>my vector art</h3>
+                </div>
                 <div className={styles["art-container"]}>
                   <figure className={styles["art-frame"]}>
                     <img
