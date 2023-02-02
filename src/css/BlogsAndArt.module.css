@@ -62,10 +62,9 @@
 .blogs-list li {
   margin: 0.8rem;
   padding: 0.4rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
+  font-family: "Proza Libre", sans-serif;
 }
 .blog {
   color: var(--creamy-berry);
