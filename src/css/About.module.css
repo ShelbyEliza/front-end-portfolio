@@ -1,93 +1,146 @@
 .about-container {
   display: flex;
-  /* padding-top: 1rem; */
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  border-radius: 2rem;
 }
-.about-container h2 {
-  background: var(--shuriken);
+.about-container section {
+  display: flex;
+  width: 100%;
+}
+.about-container b {
+  color: var(--creamy-berry);
+
+  font-weight: 700;
+}
+
+.col-1 {
+  width: 25%;
+  text-align: center;
+}
+.col-2 {
+  width: 75%;
+  text-align: center;
+}
+.title-section,
+.edu-skills-section,
+.bottom-left,
+.bottom-right {
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-super-trans);
+  border: 0.08rem solid var(--sweet-perfume);
+}
+
+.title-section {
+  background: var(--infinity);
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.subtitle {
+  width: fit-content;
+  margin: auto;
+
+  font-family: "Proza Libre", sans-serif;
+}
+
+.col-2-content {
+  padding: 2rem 3rem;
+
+  background: var(--infinity-trans);
+}
+.col-2-content a {
+  color: var(--perrywinkle);
+  font-weight: 700;
+}
+.col-2-content a:hover {
+  color: var(--sweet-perfume);
+  text-decoration: underline;
+}
+
+.col-2-content p {
+  padding-top: 0.2rem;
+  text-align: left;
+
+  font-family: "Proza Libre", sans-serif;
+  line-height: 1.6;
+  color: var(--peekaboo);
+}
+
+.edu-skills-section .col-2-content p {
+  padding-bottom: 1.2rem;
+  text-indent: 5%;
+}
+.passions-section .col-2-content p {
+  padding-bottom: 0.4rem;
+}
+.indent {
+  text-indent: 8%;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  width: 225px;
+  height: 225px;
+
+  text-align: center;
+
+  background: var(--moonraker);
+  border-top-left-radius: 2rem;
+}
+.page-heading {
+  padding: 2rem;
+  font-size: 2.8rem;
+}
+.edu-skills-section .col-1,
+.edu-skills-section .col-2-content {
+  border-left: 0.04rem solid var(--sweet-perfume);
+  border-right: 0.04rem solid var(--sweet-perfume);
+  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-super-trans);
+}
+.edu-skills-section .col-1,
+.passions-section .col-1 {
+  background: var(--infinity);
+  padding-top: 2rem;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 2rem;
+}
+.bottom-right,
+.bottom-right .col-2-content {
+  border-bottom-right-radius: 2rem;
 }
 .about-container h3 {
   text-align: center;
-}
 
-/* .about-container h2,
-.page-heading {
-  padding-top: 0.4rem;
-
-  color: var(--sweet-perfume);
-
-  text-shadow: var(--sweet-perfume) 0rem 0 0.8rem;
-  font-family: "Kumar One Outline", cursive;
-} */
-
-.left {
-  display: flex;
-  width: 25%;
-
-  flex-direction: column;
-  justify-content: space-around;
-  border: 0.08rem solid var(--perrywinkle-trans);
-  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans);
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-
-  text-align: center;
-}
-.page-heading {
-  border-top-left-radius: 2rem;
-}
-
-.photo-section {
-  padding: 2rem;
-}
-
-.edu-passion-section {
-  border: 0.08rem solid var(--perrywinkle-trans);
-  /* width: 80%; */
-
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-
-  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--perrywinkle-trans);
-}
-.edu-passion-section p {
-  text-indent: 2rem;
-  margin: 0.6rem 1.6rem;
-}
-.edu-passion-section h2 {
-  text-indent: 1.2rem;
-}
-.edu-section h2 {
-  border-top-right-radius: 2rem;
-}
-
-.content {
-  padding: 1rem;
-}
-.skills-section {
-  height: 100%;
-  /* background: var(--shuriken); */
+  font-family: "Tienne", serif;
+  font-weight: 900;
+  color: var(--mangala-pink);
 }
 
 .skills-list {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
+
+  margin-top: 1.2rem;
 }
 .skill {
   display: flex;
   align-items: center;
-
-  width: 100%;
-  padding: 1rem;
-
-  background: var(--perrywinkle-trans);
-
-  border-radius: 1rem;
   margin: 0.2rem;
+  padding: 0.6rem 1rem;
+
+  background: var(--infinity);
+  border-radius: 1rem;
+
+  font-size: 1.2rem;
 }
 .skill figcaption {
-  color: white;
+  color: var(--peekaboo);
 }
 
 .fig {
@@ -95,6 +148,7 @@
   height: 24px;
   margin-left: auto;
   margin-right: 0.8rem;
+
   color: var(--sweet-perfume);
 }
 
