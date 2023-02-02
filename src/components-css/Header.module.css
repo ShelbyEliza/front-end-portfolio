@@ -128,14 +128,14 @@ header {
 
 /* ------- tablet -------- */
 @media only screen and (min-width: 401px) and (max-width: 899px) {
-  .site-content {
-    max-width: 899px;
-    min-width: 401px;
+  header {
+    height: 400px;
+    font-size: 18px;
   }
 }
 /* ------- mobile -------- */
 @media only screen and (max-width: 400px) {
-  .site-content {
-    width: 100%;
-  }
+  /* header {
+    height: 200px;
+  } */
 }

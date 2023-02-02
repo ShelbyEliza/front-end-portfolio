@@ -1,5 +1,5 @@
 // css:
-import styles from "../css/About.module.css";
+import styles from "../pages-css/About.module.css";
 // assets:
 import {
   SiJavascript,
@@ -14,7 +14,7 @@ import {
 
 export default function About() {
   return (
-    <div className="site-content">
+    <div className="page-content">
       <div className={styles["about-container"]}>
         <section className={styles["title-section"]}>
           <div className={styles["col-1"]}>
@@ -78,68 +78,92 @@ export default function About() {
                   <div>
                     <ul className={styles["skills-list"]}>
                       <li className={styles.skill}>
-                        <figure>
-                          <SiJavascript className={styles.fig} />
+                        <figure alt="JavaScript logo">
+                          <SiJavascript
+                            className={styles.fig}
+                            aria-label="JavaScript logo"
+                          />
+                          <figcaption>
+                            <h4>JavaScript</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>JavaScript</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiReact className={styles.fig} />
+                          <SiReact
+                            className={styles.fig}
+                            aria-label="React logo"
+                          />
+                          <figcaption>
+                            <h4>React</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>React</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiCss3 className={styles.fig} />
+                          <SiCss3
+                            className={styles.fig}
+                            aria-label="CSS logo"
+                          />
+                          <figcaption>
+                            <h4>CSS</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>CSS</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiHtml5 className={styles.fig} />
+                          <SiHtml5
+                            className={styles.fig}
+                            aria-label="HTML logo"
+                          />
+                          <figcaption>
+                            <h4>HTML</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>HTML</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiFirebase className={styles.fig} />
+                          <SiFirebase
+                            className={styles.fig}
+                            aria-label="Firebase logo"
+                          />
+                          <figcaption>
+                            <h4>Firebase</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>Firebase</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiInkscape className={styles.fig} />
+                          <SiInkscape
+                            className={styles.fig}
+                            aria-label="Inkscape logo"
+                          />
+                          <figcaption>
+                            <h4>Vector Art</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>Vector Art</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiNodedotjs className={styles.fig} />
+                          <SiNodedotjs
+                            className={styles.fig}
+                            aria-label="Node.js logo"
+                          />
+                          <figcaption>
+                            <h4>Node.js</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>Node.js</h4>
-                        </figcaption>
                       </li>
                       <li className={styles.skill}>
                         <figure>
-                          <SiGithub className={styles.fig} />
+                          <SiGithub
+                            className={styles.fig}
+                            aria-label="GitHub logo"
+                          />
+                          <figcaption>
+                            <h4>gitHub</h4>
+                          </figcaption>
                         </figure>
-                        <figcaption>
-                          <h4>gitHub</h4>
-                        </figcaption>
                       </li>
                     </ul>
                   </div>

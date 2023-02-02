@@ -1,6 +1,6 @@
 // css:
-import styles from "../css/Header.module.css";
-import "../css/MoonMenu.css";
+import styles from "../components-css/Header.module.css";
+import "../components-css/MoonMenu.css";
 
 // assets:
 import texture from "../assets/menu-images/moon-texture.png";

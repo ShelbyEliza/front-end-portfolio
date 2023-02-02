@@ -1,4 +1,4 @@
-import "../../css/MoonMenu.css";
+import "../../components-css/MoonMenu.css";
 
 function RotationRing() {
   return (
@@ -6,6 +6,7 @@ function RotationRing() {
       className="rotation-ring"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 360 360"
+      aria-label="A pointer that indicates what page is open"
     >
       <g paintOrder="stroke markers fill">
         <path

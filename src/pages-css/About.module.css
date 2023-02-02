@@ -39,7 +39,7 @@
 }
 .subtitle {
   width: fit-content;
-  margin: auto;
+  /* margin: auto; */
 
   font-family: "Proza Libre", sans-serif;
 }
@@ -139,6 +139,10 @@
 
   font-size: 1.2rem;
 }
+.skill figure,
+.skill figcaption {
+  display: flex;
+}
 .skill figcaption {
   color: var(--peekaboo);
 }
@@ -161,7 +165,9 @@
   .edu-passion-section {
     /* width: 80%; */
   }
-
+  .subtitle {
+    margin: auto;
+  }
   /* .page-heading {
     text-indent: 12%;
   }
@@ -172,12 +178,23 @@
 
 /* ------- tablet -------- */
 @media only screen and (min-width: 401px) and (max-width: 899px) {
-  .edu-passion-section {
-    width: 400px;
+  /* Considering: */
+  /* .col-1 {
+    font-size: 0.6rem;
   }
-  /* .site-content {
-    max-width: 899px;
-    min-width: 401px;
+  .page-heading {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    text-align: right;
+  }
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-left: auto;
+
+    font-size: 0.8rem;
+    border: 1px solid var(--creamy-berry);
   } */
 }
 /* ------- mobile -------- */
@@ -185,7 +202,7 @@
   .edu-passion-section {
     /* width: 200px; */
   }
-  /* .site-content {
+  /* .page-content {
     width: 100%;
   } */
 }

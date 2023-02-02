@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Tienne:wght@400;700;900&display=swap");
 
+/* All Colors Featured in Site */
 :root {
   --umbra: #221a24;
   --infinity: #232333ff;
@@ -55,6 +56,10 @@ body {
   background-size: cover;
 }
 .site-content {
+  width: 900px;
+  margin: auto;
+}
+.page-content {
   margin: auto;
 }
 
@@ -75,13 +80,24 @@ h2 {
   font-family: "Kumar One Outline", cursive;
 }
 
+.outer-moon,
+.rotation-ring,
+.moon-face {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+}
+
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
 @media only screen and (min-width: 900px) {
   .app {
     font-size: 18px;
   }
-  .site-content {
+  /* .site-content {
+    width: 60rem;
+  } */
+  .page-content {
     width: 900px;
   }
 
@@ -97,9 +113,17 @@ h2 {
 
 /* ------- tablet -------- */
 @media only screen and (min-width: 401px) and (max-width: 899px) {
+  .app {
+    font-size: 14px;
+  }
+  .site-content {
+    width: 100vw;
+  }
+  .page-content {
+    width: 100vw;
+  }
   /* .site-content {
-    max-width: 899px;
-    min-width: 401px;
+    width: 50%;
   } */
 }
 /* ------- mobile -------- */
