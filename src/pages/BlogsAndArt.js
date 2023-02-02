@@ -1,5 +1,7 @@
+// css:
 import styles from "../css/BlogsAndArt.module.css";
 
+// assets:
 import lady from "../assets/art/lady.svg";
 
 import { useCollection } from "../hooks/useCollection";
@@ -24,7 +26,6 @@ export default function BlogsAndArt() {
     <div className="site-content">
       {!documentError ? (
         <div className={styles.page}>
-          {/* <h1 className={styles["page-heading"]}>My Blogs & Art</h1> */}
           {blogs && (
             <>
               <section className={styles["blogs-section"]}>
@@ -38,7 +39,7 @@ export default function BlogsAndArt() {
                       <li key={blog.id}>
                         <a
                           href={blog.link}
-                          title={blog.title}
+                          title={blog.description}
                           className={styles.blog}
                         >
                           {blog.name}
@@ -60,28 +61,23 @@ export default function BlogsAndArt() {
                       src={lady}
                       alt="a lady's face"
                     />
-                    {/* <figcaption>A lady's Face</figcaption> */}
                   </figure>
 
                   <figure className={styles["art-frame"]}>
                     <img className={styles.art} src="" alt="" />
-                    {/* <figcaption>Art</figcaption> */}
                   </figure>
 
                   <figure className={styles["art-frame"]}>
                     <img className={styles.art} src="" alt="" />
-                    {/* <figcaption>Art</figcaption> */}
                   </figure>
 
                   <figure className={styles["art-frame"]}>
                     <img className={styles.art} src="" alt="" />
-                    {/* <figcaption>Art</figcaption> */}
                   </figure>
                 </div>
               </section>
             </>
           )}
-          {/* <article></article> */}
         </div>
       ) : (
         <div>{documentError}</div>

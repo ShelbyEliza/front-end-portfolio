@@ -56,29 +56,35 @@
   border-top-right-radius: 2rem;
 }
 .blogs-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 1rem;
-  text-align: center;
+  align-items: center;
 }
 .blogs-list li {
-  margin: 0.8rem;
+  flex-basis: 50%;
+  text-align: center;
   padding: 0.4rem;
-  font-size: 1.3rem;
 
+  font-size: 1.3rem;
   font-family: "Proza Libre", sans-serif;
+
+  border: 0.08rem solid var(--transparent);
+  border-radius: 1rem;
 }
 .blog {
-  color: var(--creamy-berry);
-  padding: 1rem 4rem;
+  padding: 0.6rem 0.8rem;
   font-weight: 480;
+
+  color: var(--creamy-berry);
 }
-
-.blog:hover {
-  color: var(--mangala-pink);
-
-  text-shadow: var(--sweet-perfume-trans) 0rem 0 0.8rem;
-
+.blogs-list li:hover {
   border: 0.08rem solid var(--sweet-perfume-super-trans);
   border-radius: 1rem;
+}
+.blog:hover {
+  color: var(--mangala-pink);
+  text-shadow: var(--sweet-perfume-trans) 0rem 0 0.8rem;
 }
 .art-container {
   display: flex;
@@ -94,7 +100,6 @@
 
 .art-frame {
   width: 40%;
-  /* height: 40%; */
   margin: 0.4rem;
 
   padding: 1rem;
@@ -105,7 +110,6 @@
 }
 .art {
   width: 100%;
-  /* height: 100%; */
 }
 
 /*-------------------- Responsive Design ----------------------*/
