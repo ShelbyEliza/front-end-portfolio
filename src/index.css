@@ -8,11 +8,13 @@
 
   --shuriken: #2f2f44ff;
 
+  --heron: #5d5d87;
   --moonraker: #bdb8d6;
   --perrywinkle: #9898dd;
   --perrywinkle-super-trans: #9898dd1b;
 
   --packing-paper: #bca85eff;
+  --packing-paper-trans: rgba(188, 168, 94, 0.021);
 
   --peekaboo: #e7dfe7;
   --creamy-berry: #e0bcd5;
@@ -21,11 +23,15 @@
   --sweet-perfume: #dd98ba;
   --sweet-perfume-trans: #dd98bbad;
   --sweet-perfume-super-trans: #dd98bb82;
+  --sweet-perfume-super-duper-trans: #dd98bb33;
 
   --mangala-pink: #eb8aa0;
   --happy-hearts: #d76461;
 
   --transparent: #ffffff00;
+
+  --trial: #4c8977;
+  /* #87875d */
 }
 
 /* Fonts */
@@ -94,25 +100,13 @@ h2 {
   .app {
     font-size: 18px;
   }
-  /* .site-content {
-    width: 60rem;
-  } */
   .page-content {
     width: 900px;
   }
-
-  /* h1 {
-    text-indent: 8%;
-    font-size: 2rem;
-  }
-  h2 {
-    text-indent: 10%;
-    font-size: 1.6rem;
-  } */
 }
 
-/* ------- tablet -------- */
-@media only screen and (min-width: 401px) and (max-width: 899px) {
+/* ------- tablet & mobile -------- */
+@media only screen and (max-width: 899px) {
   .app {
     font-size: 14px;
   }
@@ -122,13 +116,4 @@ h2 {
   .page-content {
     width: 100vw;
   }
-  /* .site-content {
-    width: 50%;
-  } */
-}
-/* ------- mobile -------- */
-@media only screen and (max-width: 400px) {
-  /* .site-content {
-    width: 100%;
-  } */
 }

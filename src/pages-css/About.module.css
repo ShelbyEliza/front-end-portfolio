@@ -41,7 +41,6 @@
   width: fit-content;
   margin: auto;
   word-break: break-word;
-  /* padding: 2%; */
 
   font-family: "Proza Libre", sans-serif;
 }
@@ -97,7 +96,6 @@
 .edu-skills-section .col-1,
 .passions-section .col-1 {
   background: var(--infinity);
-  /* padding-top: 2rem; */
 }
 
 .about-container h3 {
@@ -171,8 +169,8 @@
   }
 }
 
-/* ------- tablet -------- */
-@media only screen and (min-width: 401px) and (max-width: 899px) {
+/* ------- tablet & mobile -------- */
+@media only screen and (max-width: 899px) {
   .photo-container {
     width: 100%;
     height: 100%;
@@ -180,10 +178,8 @@
   .page-heading {
     padding: 0.8rem 0.8rem 0rem 0.8rem;
     font-size: 1.8rem;
-    /* border: 1px solid var(--creamy-berry); */
   }
   .subtitle {
-    /* border: 1px solid var(--sweet-perfume); */
     font-size: 0.8rem;
     padding-bottom: 4%;
   }
@@ -209,6 +205,3 @@
     border-bottom-right-radius: 2rem;
   }
 }
-/* ------- mobile -------- */
-/* @media only screen and (max-width: 400px) {
-} */

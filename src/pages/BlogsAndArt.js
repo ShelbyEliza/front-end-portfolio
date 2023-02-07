@@ -36,15 +36,14 @@ export default function BlogsAndArt() {
                 <ul className={styles["blogs-list"]}>
                   {blogs.map((blog) => {
                     return (
-                      <li key={blog.id}>
-                        <a
-                          href={blog.link}
-                          title={blog.description}
-                          className={styles.blog}
-                        >
-                          {blog.name}
-                        </a>
-                      </li>
+                      <a
+                        href={blog.link}
+                        title={blog.description}
+                        className={styles.blog}
+                        key={blog.id}
+                      >
+                        <li>{blog.name}</li>
+                      </a>
                     );
                   })}
                 </ul>

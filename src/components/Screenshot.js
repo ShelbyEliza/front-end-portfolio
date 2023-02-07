@@ -17,12 +17,10 @@ import magicCardGame from "../assets/sites-screenshots/magic-card-game.png";
 export default function Screenshot(site) {
   // console.log();
   return (
-    <div className={styles["shot-container"]}>
-      <img
-        className={styles.shot}
-        src={site.site.screenshotAddress}
-        alt={`${site.site.title}'s screenshot`}
-      />
-    </div>
+    <img
+      className={styles.shot}
+      src={site.site.screenshotAddress}
+      alt={`${site.site.title}'s screenshot`}
+    />
   );
 }

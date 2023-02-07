@@ -2,28 +2,18 @@
 import "../../components-css/MoonMenu.css";
 
 const textPathStyles = {
-  fill: "var(--infinity)",
+  fill: "var(--heron)",
 };
 const textPathStylesSelected = {
-  fill: "var(--happy-hearts)",
+  fill: "var(--shuriken)",
 };
 /* TODO: make navlinks onhover less awkward */
 const backBoxStyles = {
   paintOrder: "stroke markers fill",
   fill: "none",
-  // fill: "var(--sweet-perfume)",
-  // fill: "var(--happy-hearts)",
-  // fillOpacity: "0.2",
-  // filter: "hue-rotate(20deg)",
-  // filter: "drop-shadow(0rem 0rem 0.4rem ) var(--peekaboo)",
-  // filter: "url(#blurMe)",
-  // filter: "blur(4px)",
-  // mixBlendMode: "hue",
-  // mixBlendMode: "darken",
 };
 const backBoxStylesSelected = {
   paintOrder: "stroke markers fill",
-  fillOpacity: "0.24",
   fill: "none",
 };
 
