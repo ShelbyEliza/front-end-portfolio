@@ -1,30 +1,32 @@
-import styles from "../css/Sites.module.css";
+// css:
+import styles from "../pages-css/Sites.module.css";
 
-import { useState, useEffect } from "react";
+// assets:
 import Screenshot from "../components/Screenshot";
 
+import { useState, useEffect } from "react";
 import { useCollection } from "../hooks/useCollection";
 
-export default function MySites() {
+export default function Sites() {
   const [sites, setSites] = useState(null);
-  // const [documentError, setDocumentError] = useState(null);
+  const [documentError, setDocumentError] = useState(null);
   const { documents, error } = useCollection("sites");
 
   useEffect(() => {
     if (documents) {
       setSites(documents);
     }
-
-    // if (error) {
-    //   setDocumentError(error);
-    // }
+    if (error) {
+      setDocumentError(error);
+    }
   }, [documents, error]);
 
   return (
-    <div className={`site-content ${styles["my-sites"]}`}>
+    <div className={`page-content ${styles["my-sites"]}`}>
       <div className={styles.top}>
         <h1 className={styles["page-heading"]}>My Sites</h1>
       </div>
+      {documentError && <p>{documentError}</p>}
       {sites && (
         <section>
           <ul className={styles.list}>

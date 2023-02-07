@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Tienne:wght@400;700;900&display=swap");
 
+/* All Colors Featured in Site */
 :root {
   --umbra: #221a24;
   --infinity: #232333ff;
@@ -7,11 +8,13 @@
 
   --shuriken: #2f2f44ff;
 
+  --heron: #5d5d87;
   --moonraker: #bdb8d6;
   --perrywinkle: #9898dd;
   --perrywinkle-super-trans: #9898dd1b;
 
   --packing-paper: #bca85eff;
+  --packing-paper-trans: rgba(188, 168, 94, 0.021);
 
   --peekaboo: #e7dfe7;
   --creamy-berry: #e0bcd5;
@@ -20,6 +23,7 @@
   --sweet-perfume: #dd98ba;
   --sweet-perfume-trans: #dd98bbad;
   --sweet-perfume-super-trans: #dd98bb82;
+  --sweet-perfume-super-duper-trans: #dd98bb33;
 
   --mangala-pink: #eb8aa0;
   --happy-hearts: #d76461;
@@ -55,6 +59,10 @@ body {
   background-size: cover;
 }
 .site-content {
+  width: 900px;
+  margin: auto;
+}
+.page-content {
   margin: auto;
 }
 
@@ -75,36 +83,34 @@ h2 {
   font-family: "Kumar One Outline", cursive;
 }
 
+.outer-moon,
+.rotation-ring,
+.moon-face {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+}
+
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
 @media only screen and (min-width: 900px) {
   .app {
     font-size: 18px;
   }
-  .site-content {
+  .page-content {
     width: 900px;
   }
+}
 
-  /* h1 {
-    text-indent: 8%;
-    font-size: 2rem;
+/* ------- tablet & mobile -------- */
+@media only screen and (max-width: 899px) {
+  .app {
+    font-size: 14px;
   }
-  h2 {
-    text-indent: 10%;
-    font-size: 1.6rem;
-  } */
-}
-
-/* ------- tablet -------- */
-@media only screen and (min-width: 401px) and (max-width: 899px) {
-  /* .site-content {
-    max-width: 899px;
-    min-width: 401px;
-  } */
-}
-/* ------- mobile -------- */
-@media only screen and (max-width: 400px) {
-  /* .site-content {
-    width: 100%;
-  } */
+  .site-content {
+    width: 100vw;
+  }
+  .page-content {
+    width: 100vw;
+  }
 }

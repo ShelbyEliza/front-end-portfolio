@@ -10,7 +10,6 @@
 .top {
   display: flex;
   align-items: center;
-  padding: 0rem 2.4rem 0rem 2.4rem;
 
   background: var(--infinity);
   border-top-left-radius: 2rem;
@@ -21,8 +20,6 @@
   display: flex;
   align-items: center;
 
-  padding: 0rem 2.4rem 0rem 2.4rem;
-
   background: var(--infinity);
   border-top: 0.08rem solid var(--sweet-perfume);
   border-bottom: 0.08rem solid var(--sweet-perfume);
@@ -31,7 +28,6 @@
 .bottom h1 {
   width: 25%;
   text-align: left;
-  padding-top: 1.6rem;
 
   border-top-left-radius: 2rem;
 }
@@ -40,14 +36,12 @@
   width: 75%;
   height: 100%;
   text-align: right;
-  padding-top: 2rem;
 
   color: var(--mangala-pink);
   font-family: "Tienne", serif;
   font-weight: 900;
 
   border-top-right-radius: 2rem;
-  border-left: 0.08rem double var(--sweet-perfume);
 }
 
 .blogs-section {
@@ -58,29 +52,22 @@
 .blogs-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
   align-items: center;
 }
 .blogs-list li {
-  flex-basis: 50%;
   text-align: center;
   padding: 0.4rem;
 
-  font-size: 1.3rem;
-  font-family: "Proza Libre", sans-serif;
-
   border: 0.08rem solid var(--transparent);
-  border-radius: 1rem;
 }
 .blog {
-  padding: 0.6rem 0.8rem;
   font-weight: 480;
 
+  font-family: "Proza Libre", sans-serif;
   color: var(--creamy-berry);
 }
 .blogs-list li:hover {
   border: 0.08rem solid var(--sweet-perfume-super-trans);
-  border-radius: 1rem;
 }
 .blog:hover {
   color: var(--mangala-pink);
@@ -114,20 +101,49 @@
 
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
-/* @media only screen and (min-width: 900px) {
-} */
-
-/* ------- tablet -------- */
-@media only screen and (min-width: 401px) and (max-width: 899px) {
+@media only screen and (min-width: 900px) {
+  .top,
+  .bottom {
+    padding: 0rem 2.4rem 0rem 2.4rem;
+  }
   .top h1,
   .bottom h1 {
-    width: fit-content;
+    padding-top: 1.6rem;
+  }
+  .top h3,
+  .bottom h3 {
+    padding-top: 2rem;
+    border-left: 0.08rem double var(--sweet-perfume);
+  }
+  .blog {
+    flex-basis: 50%;
+    border-radius: 1rem;
+
+    font-size: 1.3rem;
+  }
+  .blog:hover {
+    border-radius: 1rem;
+  }
+  .blogs-list {
+    padding: 0.8rem 0.4rem;
+  }
+  .blogs-list li {
+    border-radius: 1rem;
   }
 }
-/* ------- mobile -------- */
-@media only screen and (max-width: 400px) {
-  .top h1,
-  .bottom h1 {
-    width: fit-content;
+
+/* ------- tablet & mobile -------- */
+@media only screen and (max-width: 899px) {
+  .top,
+  .bottom {
+    padding: 0.8rem 1rem 0rem 1rem;
+  }
+  .blogs-list {
+    flex-direction: column;
+    padding: 0.6rem 0rem;
+  }
+  .blog {
+    width: 100%;
+    font-size: 1rem;
   }
 }

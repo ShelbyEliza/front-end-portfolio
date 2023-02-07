@@ -16,11 +16,11 @@
 }
 
 .col-1 {
-  width: 25%;
+  flex: 1;
   text-align: center;
 }
 .col-2 {
-  width: 75%;
+  flex: 3;
   text-align: center;
 }
 .title-section,
@@ -40,6 +40,7 @@
 .subtitle {
   width: fit-content;
   margin: auto;
+  word-break: break-word;
 
   font-family: "Proza Libre", sans-serif;
 }
@@ -81,17 +82,10 @@
 .photo-container {
   display: flex;
   justify-content: center;
-  width: 225px;
-  height: 225px;
-
   text-align: center;
 
   background: var(--moonraker);
   border-top-left-radius: 2rem;
-}
-.page-heading {
-  padding: 2rem;
-  font-size: 2.8rem;
 }
 .edu-skills-section .col-1,
 .edu-skills-section .col-2-content {
@@ -102,16 +96,8 @@
 .edu-skills-section .col-1,
 .passions-section .col-1 {
   background: var(--infinity);
-  padding-top: 2rem;
 }
 
-.bottom-left {
-  border-bottom-left-radius: 2rem;
-}
-.bottom-right,
-.bottom-right .col-2-content {
-  border-bottom-right-radius: 2rem;
-}
 .about-container h3 {
   text-align: center;
 
@@ -139,6 +125,10 @@
 
   font-size: 1.2rem;
 }
+.skill figure,
+.skill figcaption {
+  display: flex;
+}
 .skill figcaption {
   color: var(--peekaboo);
 }
@@ -155,37 +145,63 @@
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
 @media only screen and (min-width: 900px) {
-  .about-container {
-    /* margin: 0rem 6rem; */
+  .page-heading {
+    font-size: 2.8rem;
+    padding: 2rem;
   }
-  .edu-passion-section {
-    /* width: 80%; */
+  .subtitle {
+    padding: 2%;
   }
-
-  /* .page-heading {
-    text-indent: 12%;
+  .photo-container {
+    width: 225px;
+    height: 225px;
   }
-  .about-container h2 {
-    text-indent: 16%;
-  } */
+  .bottom-left {
+    border-bottom-left-radius: 2rem;
+  }
+  .bottom-right,
+  .bottom-right .col-2-content {
+    border-bottom-right-radius: 2rem;
+  }
+  .edu-skills-section .col-1,
+  .passions-section .col-1 {
+    padding-top: 2rem;
+  }
 }
 
-/* ------- tablet -------- */
-@media only screen and (min-width: 401px) and (max-width: 899px) {
-  .edu-passion-section {
-    width: 400px;
-  }
-  /* .site-content {
-    max-width: 899px;
-    min-width: 401px;
-  } */
-}
-/* ------- mobile -------- */
-@media only screen and (max-width: 400px) {
-  .edu-passion-section {
-    /* width: 200px; */
-  }
-  /* .site-content {
+/* ------- tablet & mobile -------- */
+@media only screen and (max-width: 899px) {
+  .photo-container {
     width: 100%;
-  } */
+    height: 100%;
+  }
+  .page-heading {
+    padding: 0.8rem 0.8rem 0rem 0.8rem;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+    padding-bottom: 4%;
+  }
+  .edu-skills-section,
+  .passions-section {
+    flex-direction: column;
+  }
+  .edu-skills-section .col-1,
+  .edu-skills-section .col-2,
+  .passions-section .col-1,
+  .passions-section .col-2 {
+    width: 100%;
+  }
+  .edu-skills-section .col-1,
+  .passions-section .col-1 {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+  .passions-section .col-2,
+  .passions-section .col-2-content {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
 }

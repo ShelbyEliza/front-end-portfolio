@@ -1,5 +1,5 @@
 // css:
-import styles from "../css/BlogsAndArt.module.css";
+import styles from "../pages-css/BlogsAndArt.module.css";
 
 // assets:
 import lady from "../assets/art/lady.svg";
@@ -23,7 +23,7 @@ export default function BlogsAndArt() {
   }, [documents, error]);
 
   return (
-    <div className="site-content">
+    <div className="page-content">
       {!documentError ? (
         <div className={styles.page}>
           {blogs && (
@@ -36,15 +36,14 @@ export default function BlogsAndArt() {
                 <ul className={styles["blogs-list"]}>
                   {blogs.map((blog) => {
                     return (
-                      <li key={blog.id}>
-                        <a
-                          href={blog.link}
-                          title={blog.description}
-                          className={styles.blog}
-                        >
-                          {blog.name}
-                        </a>
-                      </li>
+                      <a
+                        href={blog.link}
+                        title={blog.description}
+                        className={styles.blog}
+                        key={blog.id}
+                      >
+                        <li>{blog.name}</li>
+                      </a>
                     );
                   })}
                 </ul>
@@ -55,25 +54,28 @@ export default function BlogsAndArt() {
                   <h3>my vector art</h3>
                 </div>
                 <div className={styles["art-container"]}>
-                  <figure className={styles["art-frame"]}>
+                  <div
+                    className={styles["art-frame"]}
+                    alt="A frame for artwork"
+                  >
                     <img
                       className={styles.art}
                       src={lady}
-                      alt="a lady's face"
+                      alt="a lady's portrait"
                     />
-                  </figure>
+                  </div>
 
-                  <figure className={styles["art-frame"]}>
+                  <div className={styles["art-frame"]}>
                     <img className={styles.art} src="" alt="" />
-                  </figure>
+                  </div>
 
-                  <figure className={styles["art-frame"]}>
+                  <div className={styles["art-frame"]}>
                     <img className={styles.art} src="" alt="" />
-                  </figure>
+                  </div>
 
-                  <figure className={styles["art-frame"]}>
+                  <div className={styles["art-frame"]}>
                     <img className={styles.art} src="" alt="" />
-                  </figure>
+                  </div>
                 </div>
               </section>
             </>

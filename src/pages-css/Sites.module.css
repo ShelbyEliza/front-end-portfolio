@@ -1,0 +1,129 @@
+/* Sites Page */
+.my-sites {
+  margin-bottom: 2rem;
+}
+.top {
+  padding: 1rem 2.4rem 0rem 2.4rem;
+
+  background: var(--infinity);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border: 0.08rem solid var(--sweet-perfume);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: var(--infinity-trans);
+  padding-bottom: 2rem;
+
+  border: 0.08rem solid var(--sweet-perfume);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/*  Screenshots  */
+.item {
+  display: flex;
+}
+.border {
+  align-items: center;
+  background: var(--infinity);
+}
+
+.shot {
+  width: 100%;
+  height: auto;
+}
+.right {
+  text-align: center;
+}
+.title {
+  text-align: center;
+
+  background: var(--shuriken);
+
+  color: var(--mangala-pink);
+  font-family: "Tienne", serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.description {
+  background: var(--infinity);
+  color: var(--peekaboo);
+  font-family: "Proza Libre", sans-serif;
+}
+
+/*-------------------- Responsive Design ----------------------*/
+/* ------- desktop ------- */
+@media only screen and (min-width: 900px) {
+  .top h1 {
+    font-size: 2rem;
+  }
+  .item {
+    padding: 1.8rem;
+  }
+  .border {
+    display: flex;
+    border-radius: 2.2rem;
+    border: 0.2rem solid var(--sweet-perfume);
+  }
+  .shot {
+    display: flex;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  .left {
+    border-right: 0.08rem solid var(--sweet-perfume);
+  }
+  .right {
+    width: 80%;
+    height: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    text-align: center;
+  }
+  .title {
+    margin-bottom: 1rem;
+    padding: 1rem 2rem 0.2rem 2rem;
+    border-top-right-radius: 2rem;
+
+    font-size: 1.4rem;
+  }
+  .description {
+    padding: 0rem 1.4rem 0rem 1.4rem;
+
+    border-bottom-right-radius: 2rem;
+    font-size: 1.2rem;
+  }
+  .border:hover {
+    box-shadow: 0rem 0rem 0.6rem 0.1rem var(--sweet-perfume);
+  }
+}
+
+/* ------- tablet & mobile -------- */
+@media only screen and (max-width: 899px) {
+  .top h1 {
+    font-size: 1.6rem;
+  }
+  .list {
+    padding-top: 1rem;
+  }
+  .border {
+    border: 0.08rem solid var(--sweet-perfume);
+    margin: 1rem;
+    background: var(--shuriken);
+  }
+  .link:hover .shot {
+    box-shadow: 0rem 0rem 0.6rem 0.1rem var(--sweet-perfume);
+  }
+  .title {
+    padding: 0.2rem;
+    font-size: 1.4rem;
+  }
+  .description {
+    padding: 0.4rem 1.4rem 1rem 1.4rem;
+    font-size: 1rem;
+  }
+}

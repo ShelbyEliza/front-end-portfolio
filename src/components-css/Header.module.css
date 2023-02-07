@@ -62,20 +62,13 @@ header {
   color: rgba(255, 255, 255, 0);
 }
 
-/*  TODO: make hover less awkward */
-.blogs-and-art-btn:hover,
-.about-btn:hover,
-.sites-btn:hover {
-  background: var(--creamy-berry-trans);
-}
-
 .blogs-and-art-btn,
 .about-btn,
 .sites-btn {
   display: flex;
   position: absolute;
   border: none;
-  border-radius: 1rem;
+  border-radius: 2rem;
 
   align-items: center;
   text-align: center;
@@ -88,25 +81,25 @@ header {
   height: 43px;
   width: 152px;
 
-  top: 302px;
+  top: 301px;
   left: 75px;
 
   rotate: 12deg;
 }
 .about-btn {
-  height: 48px;
-  width: 84px;
+  height: 42px;
+  width: 82px;
 
-  top: 280px;
+  top: 286px;
   left: 222px;
 
   rotate: -30deg;
 }
 .sites-btn {
   height: 34px;
-  width: 68px;
+  width: 64px;
 
-  top: 232px;
+  top: 234px;
   left: 283px;
 
   rotate: -60deg;
@@ -120,22 +113,10 @@ header {
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
 @media only screen and (min-width: 900px) {
-  header {
-    height: 400px;
-    font-size: 18px;
-  }
-}
-
-/* ------- tablet -------- */
-@media only screen and (min-width: 401px) and (max-width: 899px) {
-  .site-content {
-    max-width: 899px;
-    min-width: 401px;
-  }
-}
-/* ------- mobile -------- */
-@media only screen and (max-width: 400px) {
-  .site-content {
-    width: 100%;
+  .blogs-and-art-btn:hover,
+  .about-btn:hover,
+  .sites-btn:hover {
+    border: 1px solid var(--sweet-perfume-super-duper-trans);
+    box-shadow: 0rem 0rem 0.8rem 0.4rem var(--sweet-perfume-super-duper-trans);
   }
 }
