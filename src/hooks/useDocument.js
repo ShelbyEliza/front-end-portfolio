@@ -1,22 +1,15 @@
 import { useState, useEffect } from "react";
 import { db } from "../firebase/config";
 
-import { collection, doc, onSnapshot } from "firebase/firestore";
+import { doc, onSnapshot } from "firebase/firestore";
 
 export const useDocument = (page, pageID, subDoc) => {
   const [document, setDocument] = useState(null);
   const [error, setError] = useState(null);
-  // console.log(coll);
 
   // realtime data for document:
   useEffect(() => {
     let pageDoc = doc(db, "blogs", "allBlogs");
-    // let pageDoc = doc(db, page, pageID);
-    // let collRef = collection(pageDoc, pageID);
-    // let refID = ref[0].id;
-    console.log(pageDoc);
-    // console.log(collRef);
-    // let selectedDoc = doc(db, coll, ref.id);
 
     const unsub = onSnapshot(
       pageDoc,
