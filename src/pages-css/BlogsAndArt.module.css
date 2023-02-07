@@ -114,8 +114,8 @@
 
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
-/* @media only screen and (min-width: 900px) {
-} */
+@media only screen and (min-width: 900px) {
+}
 
 /* ------- tablet -------- */
 @media only screen and (min-width: 401px) and (max-width: 899px) {
@@ -125,9 +125,4 @@
   } */
 }
 /* ------- mobile -------- */
-@media only screen and (max-width: 400px) {
-  /* .top h1,
-  .bottom h1 {
-    width: fit-content;
-  } */
-}
+/* @media only screen and (max-width: 400px) {} */
