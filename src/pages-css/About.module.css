@@ -79,7 +79,7 @@
   text-indent: 8%;
 }
 
-.photo-container {
+.photo {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -152,7 +152,7 @@
   .subtitle {
     padding: 2%;
   }
-  .photo-container {
+  .photo {
     width: 225px;
     height: 225px;
   }
@@ -171,7 +171,7 @@
 
 /* ------- tablet & mobile -------- */
 @media only screen and (max-width: 899px) {
-  .photo-container {
+  .photo {
     width: 100%;
     height: 100%;
   }
