@@ -1,6 +1,7 @@
 // css:
 import styles from "../pages-css/About.module.css";
 // assets:
+import selfie from "../assets/selfie.jpg";
 import {
   SiJavascript,
   SiReact,
@@ -18,13 +19,12 @@ export default function About() {
       <div className={styles["about-container"]}>
         <section className={styles["title-section"]}>
           <div className={styles["col-1"]}>
-            <figure className={styles["photo-container"]}>
-              {/* <img
-                    className={styles.photo}
-                    // src={}
-                    alt="A place for a photo of the author of the site."
-                  /> */}
-              <figcaption>Photo</figcaption>
+            <figure>
+              <img
+                className={styles.photo}
+                src={selfie}
+                alt="The author of the site."
+              />
             </figure>
           </div>
           <div className={styles["col-2"]}>
