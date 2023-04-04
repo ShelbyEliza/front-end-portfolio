@@ -31,7 +31,7 @@ export default function About() {
             <h1 className={styles["page-heading"]}>Shelby Shipley</h1>
             <div className={styles["subtitle"]}>
               <p className={styles["contact-info"]}>
-                <b>email:</b> blahblahblah@email.com
+                <b>email:</b> mail@shelbyshipley.dev
               </p>
               <p className={styles["contact-info"]}>
                 <b>gitHub:</b> https://github.com/ShelbyEliza
